@@ -1,0 +1,458 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   IntelliQuChain - AI-Powered Blockchain Ecosystem
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+    /* Animations */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fadeInUp {
+      animation: fadeInUp 1s ease forwards;
+    }
+    @keyframes pulseGlow {
+      0%, 100% {
+        box-shadow: 0 0 8px 2px rgba(59, 130, 246, 0.7);
+      }
+      50% {
+        box-shadow: 0 0 20px 6px rgba(59, 130, 246, 1);
+      }
+    }
+    .pulseGlow {
+      animation: pulseGlow 2.5s infinite;
+    }
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-gray-100 leading-relaxed scroll-smooth">
+  <header class="fixed w-full bg-gray-900 bg-opacity-90 backdrop-blur-md z-50 shadow-lg">
+   <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a class="text-3xl font-extrabold text-indigo-400 hover:text-indigo-500 transition" href="#introduction">
+     IntelliQuChain
+    </a>
+    <ul class="hidden md:flex space-x-8 font-semibold text-gray-300">
+     <li>
+      <a class="hover:text-indigo-400 transition" href="#introduction">
+       Introduction
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-400 transition" href="#nfts-marketplace">
+       NFTs Marketplace
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-400 transition" href="#ai">
+       AI
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-400 transition" href="#technology-integration">
+       Technology Integration
+      </a>
+     </li>
+    </ul>
+    <button class="md:hidden text-gray-300 focus:outline-none" id="menu-btn">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </nav>
+   <div class="hidden md:hidden bg-gray-800 bg-opacity-95" id="mobile-menu">
+    <ul class="flex flex-col space-y-4 p-6 text-gray-300 font-semibold">
+     <li>
+      <a class="hover:text-indigo-400 transition" href="#introduction">
+       Introduction
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-400 transition" href="#nfts-marketplace">
+       NFTs Marketplace
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-400 transition" href="#ai">
+       AI
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-400 transition" href="#technology-integration">
+       Technology Integration
+      </a>
+     </li>
+    </ul>
+   </div>
+  </header>
+  <main class="pt-24 max-w-7xl mx-auto px-6 space-y-24">
+   <!-- Introduction -->
+   <section class="fadeInUp reveal max-w-5xl mx-auto" id="introduction">
+    <div class="flex flex-col md:flex-row items-center md:space-x-12">
+     <div class="md:w-1/2 space-y-6">
+      <h1 class="text-5xl font-extrabold text-indigo-400 leading-tight">
+       Welcome to IntelliQuChain
+      </h1>
+      <p class="text-lg text-gray-300">
+       IntelliQuChain is a revolutionary token-based AI-powered blockchain ecosystem platform designed to redefine the future of decentralized technologies. By seamlessly integrating cutting-edge artificial intelligence with blockchain's immutable ledger, IntelliQuChain empowers users, developers, and enterprises to innovate, transact, and collaborate in a secure, transparent, and intelligent environment.
+      </p>
+      <p class="text-lg text-gray-300">
+       Our platform leverages the power of AI to enhance blockchain functionalities, enabling smarter contracts, adaptive marketplaces, and personalized digital experiences. Whether you are an NFT creator, a developer exploring new AI programming languages, or a user seeking personalized AI agents, IntelliQuChain offers a comprehensive ecosystem tailored to your needs.
+      </p>
+      <a class="inline-block mt-4 px-8 py-3 bg-indigo-500 hover:bg-indigo-600 rounded-lg font-semibold transition shadow-lg pulseGlow" href="#nfts-marketplace">
+       Explore NFTs Marketplace
+      </a>
+     </div>
+     <div class="md:w-1/2 mt-10 md:mt-0">
+      <img alt="Futuristic digital network representing AI-powered blockchain ecosystem with glowing nodes and interconnected chains in blue and purple hues" class="rounded-xl shadow-2xl mx-auto" src="https://placehold.co/600x400/png?text=IntelliQuChain+AI+Blockchain+Ecosystem"/>
+     </div>
+    </div>
+   </section>
+   <!-- NFTs Marketplace with NROOT -->
+   <section class="fadeInUp reveal max-w-5xl mx-auto space-y-12" id="nfts-marketplace">
+    <h2 class="text-4xl font-extrabold text-indigo-400 text-center mb-8">
+     NFTs Marketplace with NROOT System
+    </h2>
+    <div class="space-y-8 text-gray-300 text-justify leading-relaxed text-lg">
+     <p>
+      The IntelliQuChain NFTs Marketplace introduces the groundbreaking NROOT (Non-Reproducible Original Ownership Token) system, a pioneering approach to digital asset ownership and provenance. Unlike traditional NFTs, which can be copied or replicated in various forms, NROOT tokens guarantee absolute originality and non-reproducibility, ensuring that each token represents a truly unique and verifiable digital asset.
+     </p>
+     <p>
+      At the core of the NROOT system is an advanced cryptographic protocol that embeds a unique digital fingerprint into every token minted on the IntelliQuChain platform. This fingerprint is generated through a combination of blockchain immutability, AI-driven verification algorithms, and decentralized consensus mechanisms. As a result, each NROOT token is not only unique but also resistant to forgery, duplication, or unauthorized replication.
+     </p>
+     <p>
+      The marketplace itself is designed to be intuitive, secure, and highly scalable. Users can browse, buy, sell, and auction NROOT tokens representing a wide array of digital assets, including digital art, music, virtual real estate, collectibles, and more. The integration of AI-powered recommendation engines enhances user experience by personalizing asset discovery based on individual preferences, market trends, and social signals.
+     </p>
+     <p>
+      One of the most innovative features of the NROOT system is its dynamic ownership verification. Leveraging AI, the platform continuously monitors the authenticity and provenance of tokens, alerting users to any suspicious activity or potential breaches. This proactive approach to security fosters trust and confidence among creators, collectors, and investors.
+     </p>
+     <p>
+      Creators benefit from the NROOT system by gaining unprecedented control over their digital works. Smart contracts embedded within each token allow for programmable royalties, usage rights, and transfer conditions, all enforced automatically by the blockchain. This ensures that artists and creators receive fair compensation and maintain control over how their works are used and distributed.
+     </p>
+     <p>
+      The marketplace also supports fractional ownership, enabling multiple users to co-own high-value digital assets through tokenized shares. This democratizes access to rare and valuable NFTs, opening new investment opportunities and fostering a vibrant community of collectors and enthusiasts.
+     </p>
+     <p>
+      To facilitate seamless transactions, IntelliQuChain employs its native token, NROOT Coin, which powers all marketplace activities including minting, buying, selling, and staking. The tokenomics are designed to incentivize active participation, liquidity provision, and long-term ecosystem growth.
+     </p>
+     <p>
+      Additionally, the platform integrates cross-chain compatibility, allowing users to transfer and trade NROOT tokens across multiple blockchain networks without compromising security or authenticity. This interoperability expands the reach and utility of NFTs beyond traditional boundaries.
+     </p>
+     <p>
+      The user interface of the NFTs Marketplace is crafted with a focus on accessibility and engagement. Featuring real-time analytics dashboards, live auction feeds, and interactive galleries, users can immerse themselves in a rich digital environment that celebrates creativity and innovation.
+     </p>
+     <p>
+      In summary, IntelliQuChain’s NFTs Marketplace with the NROOT system represents a paradigm shift in digital asset ownership. By combining blockchain’s transparency with AI’s intelligence, it delivers a secure, original, and dynamic platform that empowers creators and collectors alike to thrive in the digital economy.
+     </p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12">
+     <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+      <img alt="Digital art NFT showing a vibrant abstract painting with a unique cryptographic fingerprint overlay in neon blue" class="w-full h-48 object-cover" src="https://placehold.co/400x300/png?text=Digital+Art+NFT+with+Unique+Fingerprint"/>
+      <div class="p-4">
+       <h3 class="text-xl font-semibold text-indigo-400 mb-2">
+        Unique Digital Art
+       </h3>
+       <p class="text-gray-300 text-sm">
+        A one-of-a-kind digital painting secured by the NROOT system ensuring non-reproducible ownership.
+       </p>
+      </div>
+     </div>
+     <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+      <img alt="Virtual real estate NFT showing a futuristic cityscape with holographic ownership proof badge" class="w-full h-48 object-cover" src="https://placehold.co/400x300/png?text=Virtual+Real+Estate+NFT+with+Ownership+Proof"/>
+      <div class="p-4">
+       <h3 class="text-xl font-semibold text-indigo-400 mb-2">
+        Virtual Real Estate
+       </h3>
+       <p class="text-gray-300 text-sm">
+        Tokenized parcels of virtual land with verifiable original ownership and programmable usage rights.
+       </p>
+      </div>
+     </div>
+     <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+      <img alt="Music NFT showing a digital album cover with smart contract icons and royalty flow charts" class="w-full h-48 object-cover" src="https://placehold.co/400x300/png?text=Music+NFT+with+Royalty+Smart+Contract"/>
+      <div class="p-4">
+       <h3 class="text-xl font-semibold text-indigo-400 mb-2">
+        Music NFTs
+       </h3>
+       <p class="text-gray-300 text-sm">
+        Original music tracks secured by NROOT tokens with automated royalty distribution via smart contracts.
+       </p>
+      </div>
+     </div>
+     <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+      <img alt="Collectible NFT showing a rare digital figurine with AI verification badge and holographic effects" class="w-full h-48 object-cover" src="https://placehold.co/400x300/png?text=Collectible+NFT+with+AI+Verification"/>
+      <div class="p-4">
+       <h3 class="text-xl font-semibold text-indigo-400 mb-2">
+        Rare Collectibles
+       </h3>
+       <p class="text-gray-300 text-sm">
+        Digitally scarce collectibles authenticated by AI-powered verification ensuring genuine ownership.
+       </p>
+      </div>
+     </div>
+     <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+      <img alt="Dashboard interface showing fractional ownership shares of a high-value NFT with user avatars and share percentages" class="w-full h-48 object-cover" src="https://placehold.co/400x300/png?text=Fractional+NFT+Ownership+Dashboard"/>
+      <div class="p-4">
+       <h3 class="text-xl font-semibold text-indigo-400 mb-2">
+        Fractional Ownership
+       </h3>
+       <p class="text-gray-300 text-sm">
+        Co-own valuable NFTs through tokenized shares, enabling broader access and investment opportunities.
+       </p>
+      </div>
+     </div>
+     <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+      <img alt="User interface showing cross-chain NFT transfer with blockchain logos and secure transaction confirmation" class="w-full h-48 object-cover" src="https://placehold.co/400x300/png?text=Cross-Chain+NFT+Transfer+Interface"/>
+      <div class="p-4">
+       <h3 class="text-xl font-semibold text-indigo-400 mb-2">
+        Cross-Chain Compatibility
+       </h3>
+       <p class="text-gray-300 text-sm">
+        Transfer and trade NROOT tokens seamlessly across multiple blockchain networks with full security.
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- AI Section -->
+   <section class="fadeInUp reveal max-w-6xl mx-auto space-y-16" id="ai">
+    <h2 class="text-4xl font-extrabold text-indigo-400 text-center mb-12">
+     Artificial Intelligence at IntelliQuChain
+    </h2>
+    <!-- AI Overview -->
+    <article class="space-y-6 text-gray-300 text-justify leading-relaxed text-lg">
+     <p>
+      IntelliQuChain harnesses the transformative power of Artificial Intelligence to elevate blockchain technology beyond conventional limits. Our AI integration spans multiple dimensions, from intelligent contract automation to personalized AI agents, creating a dynamic and adaptive ecosystem.
+     </p>
+     <p>
+      The AI framework within IntelliQuChain is designed to be modular, scalable, and deeply integrated with blockchain’s decentralized architecture. This synergy enables real-time data analysis, predictive modeling, and autonomous decision-making, all while maintaining transparency and security.
+     </p>
+     <p>
+      The following subsections delve into the core AI components that drive IntelliQuChain’s innovation: the Main AI Agent (MAA), the AI Programming Language (APL), and the Personal AI Agent (PAA).
+     </p>
+    </article>
+    <!-- 3.1 MAA -->
+    <section class="space-y-8" id="maa">
+     <h3 class="text-3xl font-bold text-indigo-400 border-l-4 border-indigo-600 pl-4">
+      3.1 Main AI Agent (MAA)
+     </h3>
+     <div class="flex flex-col md:flex-row md:space-x-12 items-center">
+      <div class="md:w-1/2 space-y-6 text-gray-300 text-justify leading-relaxed text-lg">
+       <p>
+        The Main AI Agent (MAA) is the central intelligence hub of IntelliQuChain, orchestrating complex operations across the blockchain ecosystem. It functions as a decentralized AI brain, capable of processing vast amounts of data, executing smart contracts with enhanced logic, and adapting to evolving network conditions.
+       </p>
+       <p>
+        MAA’s architecture is built on advanced neural networks combined with reinforcement learning algorithms, enabling it to learn from blockchain transactions, user interactions, and external data feeds. This continuous learning process allows MAA to optimize transaction throughput, detect anomalies, and predict market trends with remarkable accuracy.
+       </p>
+       <p>
+        One of MAA’s key features is its ability to autonomously manage resource allocation within the network. By analyzing usage patterns and demand fluctuations, MAA dynamically adjusts computational resources, ensuring optimal performance and cost-efficiency for all participants.
+       </p>
+       <p>
+        Security is paramount for MAA. It employs multi-layered AI-driven threat detection systems that monitor for suspicious activities, potential fraud, and network vulnerabilities. When threats are detected, MAA can initiate automated countermeasures, including transaction quarantines and alerting network validators.
+       </p>
+       <p>
+        Furthermore, MAA facilitates interoperability by intelligently bridging data and assets between different blockchain protocols. This capability enhances the ecosystem’s flexibility and expands the utility of IntelliQuChain’s native tokens and NFTs.
+       </p>
+      </div>
+      <div class="md:w-1/2 mt-8 md:mt-0">
+       <img alt="Visualization of a complex neural network with interconnected nodes and glowing data streams representing the Main AI Agent's intelligence" class="rounded-xl shadow-2xl mx-auto" src="https://placehold.co/600x400/png?text=Main+AI+Agent+Neural+Network+Visualization"/>
+      </div>
+     </div>
+    </section>
+    <!-- 3.2 APL -->
+    <section class="space-y-8" id="apl">
+     <h3 class="text-3xl font-bold text-indigo-400 border-l-4 border-indigo-600 pl-4">
+      3.2 AI Programming Language (APL)
+     </h3>
+     <div class="flex flex-col md:flex-row md:space-x-12 items-center">
+      <div class="md:w-1/2 order-2 md:order-1 mt-8 md:mt-0 space-y-6 text-gray-300 text-justify leading-relaxed text-lg">
+       <p>
+        The AI Programming Language (APL) is a revolutionary new language developed specifically for programming AI-driven smart contracts and decentralized applications within IntelliQuChain. APL combines the expressiveness of modern programming languages with specialized constructs for AI model integration, data flow management, and blockchain interoperability.
+       </p>
+       <p>
+        Designed with simplicity and power in mind, APL enables developers to write intelligent contracts that can learn, adapt, and evolve over time. It supports native AI model embedding, allowing contracts to incorporate machine learning models directly, without relying on external oracles.
+       </p>
+       <p>
+        APL’s syntax is intuitive and developer-friendly, featuring strong typing, modular components, and asynchronous execution capabilities. It also includes built-in libraries for common AI tasks such as natural language processing, image recognition, and predictive analytics.
+       </p>
+       <p>
+        Security is deeply integrated into APL’s design. The language enforces strict sandboxing of AI models and contract logic, preventing unauthorized data access and ensuring deterministic execution. This guarantees that AI-powered contracts behave predictably and securely on the blockchain.
+       </p>
+       <p>
+        The APL compiler is optimized for IntelliQuChain’s virtual machine, producing highly efficient bytecode that minimizes gas costs and maximizes throughput. Additionally, APL supports seamless integration with existing blockchain standards, enabling interoperability with other smart contract platforms.
+       </p>
+       <p>
+        By empowering developers with APL, IntelliQuChain fosters a new generation of decentralized AI applications that are smarter, faster, and more secure than ever before.
+       </p>
+      </div>
+      <div class="md:w-1/2 order-1 md:order-2">
+       <img alt="Screenshot of a futuristic code editor interface displaying AI Programming Language (APL) code with syntax highlighting and AI model integration" class="rounded-xl shadow-2xl mx-auto" src="https://placehold.co/600x400/png?text=AI+Programming+Language+Code+Editor+Interface"/>
+      </div>
+     </div>
+    </section>
+    <!-- 3.3 PAA -->
+    <section class="space-y-8" id="paa">
+     <h3 class="text-3xl font-bold text-indigo-400 border-l-4 border-indigo-600 pl-4">
+      3.3 Personal AI Agent (PAA)
+     </h3>
+     <div class="flex flex-col md:flex-row md:space-x-12 items-center">
+      <div class="md:w-1/2 space-y-6 text-gray-300 text-justify leading-relaxed text-lg">
+       <p>
+        The Personal AI Agent (PAA) is an intelligent assistant tailored to individual users within the IntelliQuChain ecosystem. Powered by advanced AI algorithms and blockchain-secured data, PAA offers personalized support for managing digital assets, optimizing transactions, and interacting with decentralized applications.
+       </p>
+       <p>
+        Each PAA is uniquely configured to understand the user’s preferences, habits, and goals. It can autonomously execute tasks such as portfolio rebalancing, NFT discovery, and contract negotiation, all while maintaining full transparency and user control.
+       </p>
+       <p>
+        Privacy and security are foundational to PAA’s design. User data is encrypted and stored on decentralized storage networks, with AI computations performed in a privacy-preserving manner. Users retain full ownership of their data and can revoke permissions at any time.
+       </p>
+       <p>
+        PAA also serves as a gateway to IntelliQuChain’s AI-powered services, providing natural language interfaces, real-time analytics, and proactive alerts. Whether you are a casual user or a professional trader, PAA adapts to your needs, making blockchain interactions effortless and intelligent.
+       </p>
+       <p>
+        The agent continuously learns from user feedback and network conditions, improving its recommendations and automations over time. This dynamic adaptability ensures that PAA remains a valuable companion in the rapidly evolving blockchain landscape.
+       </p>
+      </div>
+      <div class="md:w-1/2 mt-8 md:mt-0">
+       <img alt="User interface of a Personal AI Agent showing chat window, analytics dashboard, and personalized recommendations in a sleek dark theme" class="rounded-xl shadow-2xl mx-auto" src="https://placehold.co/600x400/png?text=Personal+AI+Agent+User+Interface+with+Chat+and+Analytics"/>
+      </div>
+     </div>
+    </section>
+   </section>
+   <!-- Technology Integration -->
+   <section class="fadeInUp reveal max-w-5xl mx-auto space-y-12" id="technology-integration">
+    <h2 class="text-4xl font-extrabold text-indigo-400 text-center mb-8">
+     Technology Integration
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-gray-300 text-lg leading-relaxed">
+     <div class="space-y-6">
+      <h3 class="text-2xl font-semibold text-indigo-400 border-l-4 border-indigo-600 pl-4">
+       Blockchain &amp; AI Synergy
+      </h3>
+      <p>
+       IntelliQuChain seamlessly integrates blockchain technology with artificial intelligence to create a robust, intelligent ecosystem. The blockchain provides a decentralized, immutable ledger that ensures transparency and security, while AI adds layers of intelligence, automation, and adaptability.
+      </p>
+      <p>
+       This synergy enables smart contracts that can learn and evolve, marketplaces that adapt to user behavior, and agents that proactively manage digital assets. The result is a platform that is not only secure and decentralized but also smart and user-centric.
+      </p>
+     </div>
+     <div>
+      <img alt="Concept art showing the fusion of blockchain chains and AI neural networks glowing and intertwining in a futuristic digital space" class="rounded-xl shadow-2xl mx-auto" src="https://placehold.co/600x400/png?text=Blockchain+and+AI+Integration+Concept+Art"/>
+     </div>
+     <div>
+      <img alt="Illustration of smart contracts being automatically executed with AI algorithms represented by robotic arms and digital contract documents" class="rounded-xl shadow-2xl mx-auto" src="https://placehold.co/600x400/png?text=Smart+Contracts+Automation+with+AI"/>
+     </div>
+     <div class="space-y-6">
+      <h3 class="text-2xl font-semibold text-indigo-400 border-l-4 border-indigo-600 pl-4">
+       Smart Contracts &amp; Automation
+      </h3>
+      <p>
+       IntelliQuChain’s smart contracts are enhanced with AI capabilities, allowing them to perform complex logic, self-optimization, and adaptive execution. This reduces human intervention, minimizes errors, and accelerates transaction processing.
+      </p>
+      <p>
+       AI-driven automation also enables dynamic contract terms that can adjust based on external data, user behavior, or network conditions, creating flexible and intelligent agreements.
+      </p>
+     </div>
+     <div class="space-y-6">
+      <h3 class="text-2xl font-semibold text-indigo-400 border-l-4 border-indigo-600 pl-4">
+       Decentralized AI Model Hosting
+      </h3>
+      <p>
+       The platform supports decentralized hosting of AI models, ensuring that AI computations are distributed across the network rather than centralized servers. This approach enhances privacy, reduces latency, and increases resilience against failures or attacks.
+      </p>
+      <p>
+       Users and developers can deploy, share, and monetize AI models within the IntelliQuChain ecosystem, fostering collaboration and innovation.
+      </p>
+     </div>
+     <div>
+      <img alt="Network diagram showing decentralized nodes hosting AI models with data flow arrows and blockchain symbols" class="rounded-xl shadow-2xl mx-auto" src="https://placehold.co/600x400/png?text=Decentralized+AI+Model+Hosting+Network"/>
+     </div>
+     <div>
+      <img alt="Illustration of multiple blockchain platforms connected by glowing data streams representing interoperability and scalability" class="rounded-xl shadow-2xl mx-auto" src="https://placehold.co/600x400/png?text=Cross-Platform+Interoperability+and+Scalability"/>
+     </div>
+     <div class="space-y-6">
+      <h3 class="text-2xl font-semibold text-indigo-400 border-l-4 border-indigo-600 pl-4">
+       Cross-Platform Interoperability &amp; Scalability
+      </h3>
+      <p>
+       IntelliQuChain is built to operate across multiple blockchain platforms, enabling seamless asset transfers, data sharing, and contract execution. This interoperability is key to scaling the ecosystem and expanding its reach.
+      </p>
+      <p>
+       The platform employs layer-2 scaling solutions and AI-optimized consensus algorithms to ensure high throughput and low latency, even under heavy network loads.
+      </p>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-gray-900 border-t border-gray-800 mt-24 py-12">
+   <div class="max-w-7xl mx-auto px-6 text-gray-400 text-center space-y-4">
+    <p>
+     © 2024 IntelliQuChain. All rights reserved.
+    </p>
+    <div class="flex justify-center space-x-6 text-indigo-400">
+     <a aria-label="Twitter" class="hover:text-indigo-600 transition" href="#">
+      <i class="fab fa-twitter fa-lg">
+      </i>
+     </a>
+     <a aria-label="LinkedIn" class="hover:text-indigo-600 transition" href="#">
+      <i class="fab fa-linkedin fa-lg">
+      </i>
+     </a>
+     <a aria-label="GitHub" class="hover:text-indigo-600 transition" href="#">
+      <i class="fab fa-github fa-lg">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Scroll reveal animation
+    function reveal() {
+      const reveals = document.querySelectorAll('.reveal');
+      for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        const revealPoint = 150;
+
+        if (elementTop < windowHeight - revealPoint) {
+          reveals[i].classList.add('active');
+        } else {
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+    window.addEventListener('scroll', reveal);
+    window.addEventListener('load', reveal);
+  </script>
+ </body>
+</html>

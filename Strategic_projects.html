@@ -1,0 +1,428 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   IntelliQuChain - AI-Powered Blockchain Ecosystem
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+    /* Animations */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fadeInUp {
+      animation: fadeInUp 1s ease forwards;
+    }
+    @keyframes pulseScale {
+      0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.05);
+        opacity: 0.85;
+      }
+    }
+    .pulseScale {
+      animation: pulseScale 3s ease-in-out infinite;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-gray-100">
+  <header class="sticky top-0 z-50 bg-gray-900 shadow-lg">
+   <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a class="flex items-center space-x-3" href="#">
+     <img alt="IntelliQuChain logo, stylized letters IQC in green and black" class="w-12 h-12 rounded-full pulseScale" src="https://placehold.co/48x48/4ade80/000000?text=IQC"/>
+     <span class="text-2xl font-extrabold tracking-wide text-green-400">
+      IntelliQuChain
+     </span>
+    </a>
+    <ul class="hidden md:flex space-x-8 font-semibold text-gray-300">
+     <li>
+      <a class="hover:text-green-400 transition" href="#ecosystem">
+       Ecosystem
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-green-400 transition" href="#projects">
+       Projects
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-green-400 transition" href="#nfts">
+       NFTs
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-green-400 transition" href="#defi">
+       DeFi
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-green-400 transition" href="#trading">
+       Trading
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-green-400 transition" href="#profit">
+       Profit
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-green-400 transition" href="#contact">
+       Contact
+      </a>
+     </li>
+    </ul>
+    <button aria-label="Toggle menu" class="md:hidden text-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400" id="menu-btn">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </nav>
+   <div class="hidden md:hidden bg-gray-800 px-6 py-4 space-y-4 font-semibold text-gray-300" id="mobile-menu">
+    <a class="block hover:text-green-400 transition" href="#ecosystem">
+     Ecosystem
+    </a>
+    <a class="block hover:text-green-400 transition" href="#projects">
+     Projects
+    </a>
+    <a class="block hover:text-green-400 transition" href="#nfts">
+     NFTs
+    </a>
+    <a class="block hover:text-green-400 transition" href="#defi">
+     DeFi
+    </a>
+    <a class="block hover:text-green-400 transition" href="#trading">
+     Trading
+    </a>
+    <a class="block hover:text-green-400 transition" href="#profit">
+     Profit
+    </a>
+    <a class="block hover:text-green-400 transition" href="#contact">
+     Contact
+    </a>
+   </div>
+  </header>
+  <main class="max-w-7xl mx-auto px-6 py-12">
+   <section class="text-center mb-20">
+    <h1 class="text-5xl md:text-6xl font-extrabold text-green-400 leading-tight fadeInUp">
+     IntelliQuChain
+    </h1>
+    <p class="mt-6 text-xl md:text-2xl max-w-3xl mx-auto text-gray-300 fadeInUp" style="animation-delay: 0.3s;">
+     The AI-Powered Blockchain Ecosystem Platform for NFTs, DeFi, Trading, and Profitable Growth
+    </p>
+    <div class="mt-10 flex justify-center space-x-6 fadeInUp" style="animation-delay: 0.6s;">
+     <a class="px-8 py-3 bg-green-500 hover:bg-green-600 rounded-full font-semibold text-gray-900 shadow-lg transition" href="#ecosystem">
+      Explore Ecosystem
+     </a>
+     <a class="px-8 py-3 border-2 border-green-500 hover:bg-green-500 hover:text-gray-900 rounded-full font-semibold text-green-500 transition" href="#contact">
+      Get Started
+     </a>
+    </div>
+    <div class="mt-16 flex justify-center space-x-8 fadeInUp" style="animation-delay: 0.9s;">
+     <img alt="3D network visualization of AI-powered blockchain nodes connected with glowing green lines" class="rounded-lg shadow-2xl" src="https://placehold.co/300x200/22c55e/ffffff?text=AI+Blockchain+Network+Visualization"/>
+     <img alt="User interface of a futuristic NFT marketplace with digital art thumbnails and price tags" class="rounded-lg shadow-2xl" src="https://placehold.co/300x200/16a34a/ffffff?text=NFT+Marketplace+Interface"/>
+    </div>
+   </section>
+   <section class="mb-24" id="ecosystem">
+    <h2 class="text-4xl font-bold text-green-400 mb-8 text-center fadeInUp">
+     The IntelliQuChain Ecosystem
+    </h2>
+    <p class="max-w-4xl mx-auto text-gray-300 text-lg leading-relaxed mb-12 fadeInUp" style="animation-delay: 0.2s;">
+     IntelliQuChain is a revolutionary blockchain ecosystem that leverages cutting-edge AI technology to power decentralized finance, NFT marketplaces, and advanced trading platforms. Our ecosystem is designed to empower users with seamless access to innovative financial tools, secure asset management, and profit-making opportunities.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+     <div class="bg-gray-800 rounded-xl p-8 shadow-lg fadeInUp" style="animation-delay: 0.4s;">
+      <img alt="Icon representing NFTs, a digital token with a unique pattern" class="mb-6 mx-auto" src="https://placehold.co/80x80/22c55e/ffffff?text=NFT"/>
+      <h3 class="text-2xl font-semibold text-green-400 mb-4 text-center">
+       NFT Marketplace
+      </h3>
+      <p class="text-gray-300 text-center leading-relaxed">
+       Buy, sell, and trade unique digital assets with AI-powered valuation and fraud detection to ensure authenticity and fair pricing.
+      </p>
+     </div>
+     <div class="bg-gray-800 rounded-xl p-8 shadow-lg fadeInUp" style="animation-delay: 0.6s;">
+      <img alt="Icon representing decentralized finance, a digital wallet with coins" class="mb-6 mx-auto" src="https://placehold.co/80x80/22c55e/ffffff?text=DeFi"/>
+      <h3 class="text-2xl font-semibold text-green-400 mb-4 text-center">
+       Decentralized Finance (DeFi)
+      </h3>
+      <p class="text-gray-300 text-center leading-relaxed">
+       Access lending, borrowing, and yield farming powered by AI risk assessment to maximize returns and minimize risks.
+      </p>
+     </div>
+     <div class="bg-gray-800 rounded-xl p-8 shadow-lg fadeInUp" style="animation-delay: 0.8s;">
+      <img alt="Icon representing trading, a candlestick chart with upward trend" class="mb-6 mx-auto" src="https://placehold.co/80x80/22c55e/ffffff?text=Trade"/>
+      <h3 class="text-2xl font-semibold text-green-400 mb-4 text-center">
+       AI-Powered Trading
+      </h3>
+      <p class="text-gray-300 text-center leading-relaxed">
+       Utilize advanced AI algorithms for real-time market analysis, automated trading bots, and portfolio optimization.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="mb-24" id="projects">
+    <h2 class="text-4xl font-bold text-green-400 mb-8 text-center fadeInUp">
+     Strategic Projects &amp; Milestones
+    </h2>
+    <p class="max-w-5xl mx-auto text-gray-300 text-lg leading-relaxed mb-12 fadeInUp" style="animation-delay: 0.2s;">
+     IntelliQuChain has launched over 10,000 strategic projects that integrate AI and blockchain technology to disrupt traditional finance and digital asset management. Our projects span multiple sectors, including NFT innovation, DeFi protocols, and AI-driven trading platforms.
+    </p>
+    <div class="space-y-10 max-w-6xl mx-auto">
+     <article class="bg-gray-800 rounded-xl p-8 shadow-lg fadeInUp" style="animation-delay: 0.4s;">
+      <h3 class="text-2xl font-semibold text-green-400 mb-3">
+       AI-Driven NFT Authentication
+      </h3>
+      <p class="text-gray-300 leading-relaxed">
+       Developed a proprietary AI system that verifies the authenticity of NFTs in real-time, reducing fraud and increasing buyer confidence across marketplaces.
+      </p>
+     </article>
+     <article class="bg-gray-800 rounded-xl p-8 shadow-lg fadeInUp" style="animation-delay: 0.6s;">
+      <h3 class="text-2xl font-semibold text-green-400 mb-3">
+       Decentralized Lending Protocol
+      </h3>
+      <p class="text-gray-300 leading-relaxed">
+       Launched a DeFi lending platform with AI-powered credit scoring, enabling users to borrow and lend assets with dynamic interest rates based on risk profiles.
+      </p>
+     </article>
+     <article class="bg-gray-800 rounded-xl p-8 shadow-lg fadeInUp" style="animation-delay: 0.8s;">
+      <h3 class="text-2xl font-semibold text-green-400 mb-3">
+       Automated Trading Bots
+      </h3>
+      <p class="text-gray-300 leading-relaxed">
+       Created AI trading bots that analyze market trends and execute trades 24/7, achieving consistent profitability and reducing human error.
+      </p>
+     </article>
+     <article class="bg-gray-800 rounded-xl p-8 shadow-lg fadeInUp" style="animation-delay: 1s;">
+      <h3 class="text-2xl font-semibold text-green-400 mb-3">
+       Cross-Chain Interoperability
+      </h3>
+      <p class="text-gray-300 leading-relaxed">
+       Integrated multiple blockchain networks to enable seamless asset transfers and interactions across ecosystems, enhancing liquidity and user experience.
+      </p>
+     </article>
+     <article class="bg-gray-800 rounded-xl p-8 shadow-lg fadeInUp" style="animation-delay: 1.2s;">
+      <h3 class="text-2xl font-semibold text-green-400 mb-3">
+       AI-Powered Market Analytics
+      </h3>
+      <p class="text-gray-300 leading-relaxed">
+       Developed a comprehensive analytics dashboard that uses AI to provide actionable insights, market forecasts, and risk assessments for traders and investors.
+      </p>
+     </article>
+    </div>
+   </section>
+   <section class="mb-24" id="nfts">
+    <h2 class="text-4xl font-bold text-green-400 mb-8 text-center fadeInUp">
+     NFTs: Unique Digital Assets
+    </h2>
+    <p class="max-w-4xl mx-auto text-gray-300 text-lg leading-relaxed mb-12 fadeInUp" style="animation-delay: 0.2s;">
+     Our NFT marketplace offers a diverse collection of digital art, collectibles, and utility tokens. Powered by AI, we ensure fair pricing, authenticity, and innovative features like dynamic NFTs that evolve based on user interaction.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+     <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden fadeInUp" style="animation-delay: 0.4s;">
+      <img alt="Digital abstract art NFT with green and black fractal patterns" class="w-full h-64 object-cover" src="https://placehold.co/400x400/22c55e/ffffff?text=NFT+Digital+Art+1"/>
+      <div class="p-4">
+       <h3 class="text-xl font-semibold text-green-400 mb-2">
+        Fractal Forest
+       </h3>
+       <p class="text-gray-300 text-sm mb-3">
+        Unique AI-generated fractal art with dynamic color shifts.
+       </p>
+       <button class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-semibold py-2 rounded transition">
+        Buy for 2.5 ETH
+       </button>
+      </div>
+     </div>
+     <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden fadeInUp" style="animation-delay: 0.6s;">
+      <img alt="Futuristic cityscape digital NFT art with neon green lights and AI motifs" class="w-full h-64 object-cover" src="https://placehold.co/400x400/16a34a/ffffff?text=NFT+Digital+Art+2"/>
+      <div class="p-4">
+       <h3 class="text-xl font-semibold text-green-400 mb-2">
+        Neon Metropolis
+       </h3>
+       <p class="text-gray-300 text-sm mb-3">
+        A vibrant cityscape glowing with AI-inspired neon lights.
+       </p>
+       <button class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-semibold py-2 rounded transition">
+        Buy for 3.1 ETH
+       </button>
+      </div>
+     </div>
+     <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden fadeInUp" style="animation-delay: 0.8s;">
+      <img alt="Digital portrait NFT of a cybernetic humanoid with glowing green eyes" class="w-full h-64 object-cover" src="https://placehold.co/400x400/22c55e/ffffff?text=NFT+Digital+Art+3"/>
+      <div class="p-4">
+       <h3 class="text-xl font-semibold text-green-400 mb-2">
+        Cyber Sentinel
+       </h3>
+       <p class="text-gray-300 text-sm mb-3">
+        A cybernetic guardian with AI-enhanced vision and strength.
+       </p>
+       <button class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-semibold py-2 rounded transition">
+        Buy for 4.0 ETH
+       </button>
+      </div>
+     </div>
+     <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden fadeInUp" style="animation-delay: 1s;">
+      <img alt="Abstract AI-generated digital art NFT with swirling green and black patterns" class="w-full h-64 object-cover" src="https://placehold.co/400x400/16a34a/ffffff?text=NFT+Digital+Art+4"/>
+      <div class="p-4">
+       <h3 class="text-xl font-semibold text-green-400 mb-2">
+        Quantum Swirl
+       </h3>
+       <p class="text-gray-300 text-sm mb-3">
+        An abstract piece representing quantum AI computations.
+       </p>
+       <button class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-semibold py-2 rounded transition">
+        Buy for 2.8 ETH
+       </button>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="mb-24" id="defi">
+    <h2 class="text-4xl font-bold text-green-400 mb-8 text-center fadeInUp">
+     DeFi: Decentralized Finance Solutions
+    </h2>
+    <p class="max-w-5xl mx-auto text-gray-300 text-lg leading-relaxed mb-12 fadeInUp" style="animation-delay: 0.2s;">
+     IntelliQuChain’s DeFi protocols offer secure, transparent, and AI-optimized financial services. From lending and borrowing to yield farming and staking, our platform maximizes your asset potential with minimal risk.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto">
+     <div class="bg-gray-800 rounded-xl p-8 shadow-lg fadeInUp" style="animation-delay: 0.4s;">
+      <img alt="Icon representing yield farming, a plant growing from coins" class="mb-6 mx-auto" src="https://placehold.co/100x100/22c55e/ffffff?text=Yield"/>
+      <h3 class="text-2xl font-semibold text-green-400 mb-4 text-center">
+       Yield Farming
+      </h3>
+      <p class="text-gray-300 text-center leading-relaxed">
+       Stake your tokens in AI-optimized pools to earn the highest possible returns with dynamic risk management.
+      </p>
+     </div>
+     <div class="bg-gray-800 rounded-xl p-8 shadow-lg fadeInUp" style="animation-delay: 0.6s;">
+      <img alt="Icon representing staking, a shield with a lock and coins" class="mb-6 mx-auto" src="https://placehold.co/100x100/22c55e/ffffff?text=Stake"/>
+      <h3 class="text-2xl font-semibold text-green-400 mb-4 text-center">
+       Staking
+      </h3>
+      <p class="text-gray-300 text-center leading-relaxed">
+       Secure the network and earn rewards by staking your IntelliQuChain tokens with AI-driven reward distribution.
+      </p>
+     </div>
+     <div class="bg-gray-800 rounded-xl p-8 shadow-lg fadeInUp" style="animation-delay: 0.8s;">
+      <img alt="Icon representing lending and borrowing, two hands exchanging coins" class="mb-6 mx-auto" src="https://placehold.co/100x100/22c55e/ffffff?text=Loan"/>
+      <h3 class="text-2xl font-semibold text-green-400 mb-4 text-center">
+       Lending &amp; Borrowing
+      </h3>
+      <p class="text-gray-300 text-center leading-relaxed">
+       Access instant loans or lend your assets with AI-powered credit scoring and dynamic interest rates.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="mb-24" id="trading">
+    <h2 class="text-4xl font-bold text-green-400 mb-8 text-center fadeInUp">
+     Trading: AI-Powered Market Intelligence
+    </h2>
+    <p class="max-w-5xl mx-auto text-gray-300 text-lg leading-relaxed mb-12 fadeInUp" style="animation-delay: 0.2s;">
+     Our AI-driven trading platform offers real-time market analysis, automated trading bots, and portfolio management tools designed to maximize your profits while minimizing risks.
+    </p>
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+     <div class="bg-gray-800 rounded-xl p-8 shadow-lg fadeInUp" style="animation-delay: 0.4s;">
+      <img alt="Screenshot of AI-powered trading dashboard with candlestick charts and analytics" class="rounded-lg mb-6" src="https://placehold.co/400x250/22c55e/ffffff?text=Trading+Dashboard"/>
+      <h3 class="text-2xl font-semibold text-green-400 mb-3">
+       Real-Time Analytics
+      </h3>
+      <p class="text-gray-300 leading-relaxed">
+       Monitor live market data with AI-enhanced indicators and alerts to make informed trading decisions.
+      </p>
+     </div>
+     <div class="bg-gray-800 rounded-xl p-8 shadow-lg fadeInUp" style="animation-delay: 0.6s;">
+      <img alt="User interface of an AI trading bot with customizable strategies and performance metrics" class="rounded-lg mb-6" src="https://placehold.co/400x250/16a34a/ffffff?text=Trading+Bot+Interface"/>
+      <h3 class="text-2xl font-semibold text-green-400 mb-3">
+       Automated Trading Bots
+      </h3>
+      <p class="text-gray-300 leading-relaxed">
+       Deploy AI bots that execute trades 24/7 based on market trends and your personalized strategies.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="mb-24 text-center" id="profit">
+    <h2 class="text-4xl font-bold text-green-400 mb-8 fadeInUp">
+     Make Profit: $50 Million in 1 Year
+    </h2>
+    <p class="max-w-4xl mx-auto text-gray-300 text-lg leading-relaxed mb-12 fadeInUp" style="animation-delay: 0.2s;">
+     IntelliQuChain’s innovative AI and blockchain integration has enabled our community to generate over $50 million in profits within the first year. Join thousands of users who are leveraging our platform to maximize their earnings and secure their financial future.
+    </p>
+    <img alt="Line chart showing exponential profit growth reaching 50 million dollars in one year with green upward trend" class="mx-auto rounded-lg shadow-2xl fadeInUp" src="https://placehold.co/600x300/22c55e/ffffff?text=Profit+Growth+Chart" style="animation-delay: 0.4s;"/>
+   </section>
+   <section class="mb-24 max-w-3xl mx-auto fadeInUp" id="contact" style="animation-delay: 0.2s;">
+    <h2 class="text-4xl font-bold text-green-400 mb-8 text-center">
+     Contact Us
+    </h2>
+    <p class="text-gray-300 text-center mb-8">
+     Have questions or want to join the IntelliQuChain revolution? Reach out to our team and start your journey today.
+    </p>
+    <form action="#" class="bg-gray-800 rounded-xl p-8 shadow-lg space-y-6" method="POST" novalidate="">
+     <div>
+      <label class="block text-gray-300 font-semibold mb-2" for="name">
+       Name
+      </label>
+      <input class="w-full rounded-md bg-gray-700 border border-gray-600 px-4 py-3 text-gray-100 focus:outline-none focus:ring-2 focus:ring-green-400" id="name" name="name" placeholder="Your full name" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block text-gray-300 font-semibold mb-2" for="email">
+       Email
+      </label>
+      <input class="w-full rounded-md bg-gray-700 border border-gray-600 px-4 py-3 text-gray-100 focus:outline-none focus:ring-2 focus:ring-green-400" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block text-gray-300 font-semibold mb-2" for="message">
+       Message
+      </label>
+      <textarea class="w-full rounded-md bg-gray-700 border border-gray-600 px-4 py-3 text-gray-100 focus:outline-none focus:ring-2 focus:ring-green-400" id="message" name="message" placeholder="Write your message here..." required="" rows="5"></textarea>
+     </div>
+     <button class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-semibold py-3 rounded transition" type="submit">
+      Send Message
+     </button>
+    </form>
+   </section>
+  </main>
+  <footer class="bg-gray-800 py-8 text-center text-gray-400">
+   <p>
+    © 2024 IntelliQuChain. All rights reserved. Powered by AI &amp; Blockchain.
+   </p>
+   <div class="mt-4 space-x-6 text-green-400 text-xl">
+    <a aria-label="Twitter" href="https://twitter.com" rel="noopener noreferrer" target="_blank">
+     <i class="fab fa-twitter hover:text-green-500 transition">
+     </i>
+    </a>
+    <a aria-label="Discord" href="https://discord.com" rel="noopener noreferrer" target="_blank">
+     <i class="fab fa-discord hover:text-green-500 transition">
+     </i>
+    </a>
+    <a aria-label="GitHub" href="https://github.com" rel="noopener noreferrer" target="_blank">
+     <i class="fab fa-github hover:text-green-500 transition">
+     </i>
+    </a>
+   </div>
+  </footer>
+  <script>
+   const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>

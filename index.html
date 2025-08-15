@@ -1,0 +1,614 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   IntelliQuChain - AI-Powered Blockchain Ecosystem
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Poppins', sans-serif;
+    }
+    /* Animations */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fadeInUp {
+      animation: fadeInUp 1s ease forwards;
+    }
+    @keyframes pulseGlow {
+      0%, 100% {
+        box-shadow: 0 0 8px 2px rgba(59, 130, 246, 0.7);
+      }
+      50% {
+        box-shadow: 0 0 20px 6px rgba(59, 130, 246, 1);
+      }
+    }
+    .pulseGlow {
+      animation: pulseGlow 2.5s infinite;
+    }
+    @keyframes slideInLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(-40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    .slideInLeft {
+      animation: slideInLeft 1s ease forwards;
+    }
+    @keyframes slideInRight {
+      0% {
+        opacity: 0;
+        transform: translateX(40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    .slideInRight {
+      animation: slideInRight 1s ease forwards;
+    }
+    @keyframes rotate360 {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    .rotate360 {
+      animation: rotate360 20s linear infinite;
+    }
+  </style>
+ </head>
+ <body class="bg-gradient-to-tr from-indigo-900 via-purple-900 to-pink-900 text-white min-h-screen flex flex-col">
+  <header class="w-full bg-gradient-to-r from-indigo-800 via-purple-700 to-pink-700 shadow-lg sticky top-0 z-50">
+   <nav class="container mx-auto px-6 py-4 flex flex-wrap items-center justify-between">
+    <a class="text-3xl font-extrabold tracking-wide text-white flex items-center space-x-2 animate-pulse" href="#">
+     <img alt="IntelliQuChain logo, stylized letters IQC in purple gradient on white background" class="rounded-full" src="https://placehold.co/40x40/7c3aed/ffffff?text=IQC"/>
+     <span>
+      IntelliQuChain
+     </span>
+    </a>
+    <input class="hidden" id="menu-toggle" type="checkbox"/>
+    <label class="cursor-pointer md:hidden block text-white" for="menu-toggle">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </label>
+    <ul class="hidden md:flex md:items-center md:space-x-8 w-full md:w-auto mt-4 md:mt-0 text-lg font-semibold" id="menu">
+     <li class="group relative">
+      <a class="hover:text-pink-400 transition duration-300 ease-in-out" href="#project-overview">
+       Project Overview
+      </a>
+      <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-400 transition-all duration-300">
+      </span>
+     </li>
+     <li class="group relative">
+      <a class="hover:text-pink-400 transition duration-300 ease-in-out" href="#innovations">
+       Innovations
+      </a>
+      <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-400 transition-all duration-300">
+      </span>
+     </li>
+     <li class="group relative">
+      <a class="hover:text-pink-400 transition duration-300 ease-in-out" href="#marketing">
+       Marketing
+      </a>
+      <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-400 transition-all duration-300">
+      </span>
+     </li>
+     <li class="group relative">
+      <a class="hover:text-pink-400 transition duration-300 ease-in-out" href="#premium-features">
+       Premium Features
+      </a>
+      <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-400 transition-all duration-300">
+      </span>
+     </li>
+     <li class="group relative">
+      <a class="hover:text-pink-400 transition duration-300 ease-in-out" href="#project-files">
+       Project Files
+      </a>
+      <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-400 transition-all duration-300">
+      </span>
+     </li>
+     <li class="group relative">
+      <a class="hover:text-pink-400 transition duration-300 ease-in-out" href="#strategic-plans">
+       Strategic Plans
+      </a>
+      <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-400 transition-all duration-300">
+      </span>
+     </li>
+     <li class="group relative">
+      <a class="hover:text-pink-400 transition duration-300 ease-in-out" href="#collaboration">
+       Collaboration
+      </a>
+      <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-400 transition-all duration-300">
+      </span>
+     </li>
+     <li class="group relative">
+      <a class="hover:text-pink-400 transition duration-300 ease-in-out" href="#my-efforts">
+       My Efforts
+      </a>
+      <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-400 transition-all duration-300">
+      </span>
+     </li>
+    </ul>
+   </nav>
+  </header>
+  <main class="flex-grow container mx-auto px-6 py-12 space-y-24">
+   <!-- Hero Section -->
+   <section class="text-center max-w-4xl mx-auto fadeInUp">
+    <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6 tracking-wide drop-shadow-lg">
+     IntelliQuChain
+    </h1>
+    <p class="text-xl md:text-2xl text-indigo-200 mb-8 leading-relaxed">
+     The Future of Token-Based AI-Powered Blockchain Ecosystem Platform
+    </p>
+    <div class="inline-flex space-x-6">
+     <a class="px-8 py-4 bg-pink-600 hover:bg-pink-700 rounded-full font-semibold text-white shadow-lg transform hover:scale-105 transition duration-300 ease-in-out pulseGlow" href="#project-overview">
+      Explore Project
+     </a>
+     <a class="px-8 py-4 border-2 border-pink-600 hover:border-pink-700 rounded-full font-semibold text-pink-400 hover:text-pink-600 shadow-lg transform hover:scale-105 transition duration-300 ease-in-out" href="#collaboration">
+      Join Collaboration
+     </a>
+    </div>
+    <div class="mt-12 relative w-64 h-64 mx-auto">
+     <img alt="Abstract futuristic AI blockchain network with glowing nodes and connecting lines in purple and pink hues" class="rounded-xl shadow-2xl rotate360" loading="lazy" src="https://placehold.co/256x256/7c3aed/ffffff?text=AI+Blockchain+Network+Graphic"/>
+    </div>
+   </section>
+   <!-- Project Overview -->
+   <section class="max-w-6xl mx-auto space-y-8 slideInLeft" id="project-overview">
+    <h2 class="text-4xl font-bold text-pink-400 mb-6 border-b-4 border-pink-600 inline-block pb-2">
+     Project Overview
+    </h2>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+     <div class="space-y-12 max-w-5xl mx-auto text-White-700 leading-relaxed text-justify">
+      <p class="fadeInUp" style="animation-delay: 0.1s;">
+       IntelliQuChain is a cutting-edge token-based AI-powered blockchain ecosystem platform designed to transform the way decentralized applications, smart contracts, and digital assets interact and evolve. By integrating advanced artificial intelligence algorithms with a robust blockchain infrastructure, IntelliQuChain enables unparalleled scalability, security, and automation for next-generation decentralized solutions.
+      </p>
+      <p class="fadeInUp" style="animation-delay: 0.2s;">Our platform leverages a unique tokenomics model that incentivizes participation, governance, and innovation within the ecosystem. IntelliQuChain’s native token serves as the backbone for all transactions, staking, and governance decisions, ensuring a fair and transparent environment for all stakeholders.</p>
+      <p class="fadeInUp" style="animation-delay: 0.3s;">The AI components embedded within IntelliQuChain provide intelligent contract auditing, predictive analytics, and adaptive consensus mechanisms that optimize network performance and security dynamically. This fusion of AI and blockchain technology empowers developers, enterprises, and users to build and interact with decentralized applications that are smarter, faster, and more secure than ever before.</p>
+      <p class="fadeInUp" style="animation-delay: 0.4s;">IntelliQuChain’s ecosystem is designed to be modular and extensible, supporting a wide range of use cases including decentralized finance (DeFi), supply chain management, identity verification, and more. Our platform fosters collaboration and innovation by providing comprehensive developer tools, APIs, and community-driven governance.</p>
+      <p class="fadeInUp" style="animation-delay: 0.5s;">With a commitment to sustainability and scalability, IntelliQuChain utilizes energy-efficient consensus algorithms and AI-optimized resource allocation to minimize environmental impact while maximizing throughput and decentralization.</p>
+      <p class="fadeInUp" style="animation-delay: 0.6s;">Join us on this revolutionary journey to redefine the future of decentralized intelligence and blockchain technology with IntelliQuChain.</p>
+      </p>
+      <ul class="list-disc list-inside space-y-3 text-indigo-300">
+       <li>
+        Decentralized AI model marketplace
+       </li>
+       <li>
+        Secure token economy with staking and rewards
+       </li>
+       <li>
+        Smart contract automation with AI enhancements
+       </li>
+       <li>
+        Cross-chain interoperability and scalability
+       </li>
+      </ul>
+     </div>
+     <div class="relative w-full max-w-md mx-auto">
+      <img alt="Visual representation of blockchain nodes connected with AI icons and token symbols in purple and violet colors" class="rounded-lg shadow-lg" loading="lazy" src="https://placehold.co/400x300/8b5cf6/ffffff?text=Blockchain+Nodes+and+AI+Icons"/>
+      <div aria-hidden="true" class="absolute -top-6 -right-6 bg-pink-600 rounded-full w-16 h-16 flex items-center justify-center shadow-lg pulseGlow">
+       <i class="fas fa-robot fa-2x text-white">
+       </i>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- Technology -->
+   <section class="max-w-6xl mx-auto space-y-8 slideInLeft" id="technology">
+   <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+    <h2 class="text-4xl font-bold text-pink-400 mb-6 border-b-4 border-pink-600 inline-block pb-2">
+     Technology
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+     <div class="bg-white rounded-xl shadow-lg p-8 fadeInUp" style="animation-delay: 0.1s;">
+      <img alt="Icon representing artificial intelligence with neural network nodes and connections in blue" class="mx-auto mb-6" loading="lazy" src="https://placehold.co/80x80/4f46e5/ffffff?text=AI"/>
+      <h3 class="text-xl font-semibold text-indigo-700 mb-3 text-center">
+       AI-Driven Smart Contracts
+      </h3>
+      <p class="text-gray-600 text-justify">
+       IntelliQuChain integrates AI algorithms to automate contract auditing, fraud detection, and adaptive execution, ensuring smarter and safer decentralized agreements.
+      </p>
+     </div>
+     <div class="bg-white rounded-xl shadow-lg p-8 fadeInUp" style="animation-delay: 0.2s;">
+      <img alt="Icon representing blockchain technology with interconnected blocks in blue" class="mx-auto mb-6" loading="lazy" src="https://placehold.co/80x80/4f46e5/ffffff?text=BC"/>
+      <h3 class="text-xl font-semibold text-indigo-700 mb-3 text-center">
+       Scalable Blockchain Infrastructure
+      </h3>
+      <p class="text-gray-600 text-justify">
+       Our platform employs a modular blockchain architecture with sharding and layer-2 solutions to achieve high throughput and low latency for global applications.
+      </p>
+     </div>
+     <div class="bg-white rounded-xl shadow-lg p-8 fadeInUp" style="animation-delay: 0.3s;">
+      <img alt="Icon representing tokenomics with a stylized token coin in blue" class="mx-auto mb-6" loading="lazy" src="https://placehold.co/80x80/4f46e5/ffffff?text=Token"/>
+      <h3 class="text-xl font-semibold text-indigo-700 mb-3 text-center">
+       Innovative Tokenomics
+      </h3>
+      <p class="text-gray-600 text-justify">
+       IntelliQuChain’s native token incentivizes ecosystem participation, governance, and rewards, fostering a vibrant and sustainable community.
+      </p>
+     </div>
+     <div class="bg-white rounded-xl shadow-lg p-8 fadeInUp" style="animation-delay: 0.1s;">
+      <img alt="Icon representing artificial intelligence with neural network nodes and connections in blue" class="mx-auto mb-6" loading="lazy" src="https://placehold.co/80x80/4f46e5/ffffff?text=AI"/>
+      <h3 class="text-xl font-semibold text-indigo-700 mb-3 text-center">
+       AI-Driven Smart Contracts
+      </h3>
+      <p class="text-gray-600 text-justify">
+       IntelliQuChain integrates AI algorithms to automate contract auditing, fraud detection, and adaptive execution, ensuring smarter and safer decentralized agreements.
+      </p>
+     </div>
+     <div class="bg-white rounded-xl shadow-lg p-8 fadeInUp" style="animation-delay: 0.2s;">
+      <img alt="Icon representing blockchain technology with interconnected blocks in blue" class="mx-auto mb-6" loading="lazy" src="https://placehold.co/80x80/4f46e5/ffffff?text=BC"/>
+      <h3 class="text-xl font-semibold text-indigo-700 mb-3 text-center">
+       Scalable Blockchain Infrastructure
+      </h3>
+      <p class="text-gray-600 text-justify">
+       Our platform employs a modular blockchain architecture with sharding and layer-2 solutions to achieve high throughput and low latency for global applications.
+      </p>
+     </div>
+     <div class="bg-white rounded-xl shadow-lg p-8 fadeInUp" style="animation-delay: 0.3s;">
+      <img alt="Icon representing tokenomics with a stylized token coin in blue" class="mx-auto mb-6" loading="lazy" src="https://placehold.co/80x80/4f46e5/ffffff?text=Token"/>
+      <h3 class="text-xl font-semibold text-indigo-700 mb-3 text-center">
+       Innovative Tokenomics
+      </h3>
+      <p class="text-gray-600 text-justify">
+       IntelliQuChain’s native token incentivizes ecosystem participation, governance, and rewards, fostering a vibrant and sustainable community.
+      </p>
+     </div>
+    </div>
+    <div class="mt-16 max-w-4xl mx-auto text-center text-gray-700 leading-relaxed fadeInUp" style="animation-delay: 0.4s;">
+     <img alt="Detailed infographic showing AI components interacting with blockchain layers, token flow, and ecosystem modules in blue and purple tones" class="rounded-xl shadow-lg mx-auto" loading="lazy" src="https://placehold.co/800x400/4f46e5/ffffff?text=AI+Blockchain+Ecosystem+Diagram"/>
+    </div>
+   </div>
+  </section>
+   <!-- Ecosystem -->
+   <section class="max-w-6xl mx-auto space-y-8 slideInLeft" id="Ecosystem">
+   <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+    <h2 class="text-4xl font-bold text-pink-400 mb-6 border-b-4 border-pink-600 inline-block pb-2">
+     Ecosystem
+    </h2>
+    <section class="max-w-6xl mx-auto space-y-8 slideInLeft" id="project-overview">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <p class="fadeInUp" style="animation-delay: 0.1s;">
+       IntelliQuChain is a cutting-edge token-based AI-powered blockchain ecosystem platform designed to transform the way decentralized applications, smart contracts, and digital assets interact and evolve. By integrating advanced artificial intelligence algorithms with a robust blockchain infrastructure, IntelliQuChain enables unparalleled scalability, security, and automation for next-generation decentralized solutions.
+      </p>
+      <p class="fadeInUp" style="animation-delay: 0.2s;">Our platform leverages a unique tokenomics model that incentivizes participation, governance, and innovation within the ecosystem. IntelliQuChain’s native token serves as the backbone for all transactions, staking, and governance decisions, ensuring a fair and transparent environment for all stakeholders.</p>
+      <p class="fadeInUp" style="animation-delay: 0.3s;">The AI components embedded within IntelliQuChain provide intelligent contract auditing, predictive analytics, and adaptive consensus mechanisms that optimize network performance and security dynamically. This fusion of AI and blockchain technology empowers developers, enterprises, and users to build and interact with decentralized applications that are smarter, faster, and more secure than ever before.</p>
+      <p class="fadeInUp" style="animation-delay: 0.4s;">IntelliQuChain’s ecosystem is designed to be modular and extensible, supporting a wide range of use cases including decentralized finance (DeFi), supply chain management, identity verification, and more. Our platform fosters collaboration and innovation by providing comprehensive developer tools, APIs, and community-driven governance.</p>
+      <p class="fadeInUp" style="animation-delay: 0.5s;">With a commitment to sustainability and scalability, IntelliQuChain utilizes energy-efficient consensus algorithms and AI-optimized resource allocation to minimize environmental impact while maximizing throughput and decentralization.</p>
+      <p class="fadeInUp" style="animation-delay: 0.6s;">Join us on this revolutionary journey to redefine the future of decentralized intelligence and blockchain technology with IntelliQuChain.</p>
+      </p>
+    </div>
+    </section>
+    <section class="max-w-6xl mx-auto space-y-8 slideInLeft" id="project-overview"></section>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+     <div class="bg-white rounded-xl shadow-lg p-8 fadeInUp" style="animation-delay: 0.1s;">
+      <img alt="Icon representing decentralized finance with stylized currency symbols and blockchain nodes in blue" class="mx-auto mb-6" loading="lazy" src="https://placehold.co/80x80/4f46e5/ffffff?text=DeFi"/>
+      <h3 class="text-xl font-semibold text-indigo-700 mb-3 text-center">
+       Decentralized Finance (DeFi)
+      </h3>
+      <p class="text-gray-600 text-justify">
+       A suite of DeFi applications including lending, borrowing, and yield farming powered by AI-driven risk assessment and dynamic interest rates.
+      </p>
+     </div>
+     <div class="bg-white rounded-xl shadow-lg p-8 fadeInUp" style="animation-delay: 0.2s;">
+      <img alt="Icon representing supply chain management with interconnected boxes and blockchain nodes in blue" class="mx-auto mb-6" loading="lazy" src="https://placehold.co/80x80/4f46e5/ffffff?text=Supply"/>
+      <h3 class="text-xl font-semibold text-indigo-700 mb-3 text-center">
+       Supply Chain Management
+      </h3>
+      <p class="text-gray-600 text-justify">
+       Transparent and tamper-proof tracking of goods and assets with AI-powered predictive logistics and fraud detection.
+      </p>
+     </div>
+     <div class="bg-white rounded-xl shadow-lg p-8 fadeInUp" style="animation-delay: 0.3s;">
+      <img alt="Icon representing digital identity verification with fingerprint and blockchain nodes in blue" class="mx-auto mb-6" loading="lazy" src="https://placehold.co/80x80/4f46e5/ffffff?text=Identity"/>
+      <h3 class="text-xl font-semibold text-indigo-700 mb-3 text-center">
+       Digital Identity
+      </h3>
+      <p class="text-gray-600 text-justify">
+       Secure and privacy-preserving identity verification system leveraging AI for adaptive authentication and fraud prevention.
+      </p>
+     </div>
+    </div>
+    <div class="mt-16 max-w-4xl mx-auto text-center text-gray-700 leading-relaxed fadeInUp" style="animation-delay: 0.4s;">
+     <img alt="Infographic showing ecosystem modules such as DeFi, supply chain, identity, and AI components interconnected within the IntelliQuChain platform in blue and purple" class="rounded-xl shadow-lg mx-auto" loading="lazy" src="https://placehold.co/800x400/4f46e5/ffffff?text=Ecosystem+Modules+and+Interactions"/>
+    </div>
+   </div>
+   </section>
+   <!--  Roadmap -->
+   <section class="max-w-6xl mx-auto space-y-8 slideInRight" id=" Roadmap">
+    <h2 class="text-4xl font-bold text-pink-400 mb-6 border-b-4 border-pink-600 inline-block pb-2">
+      Roadmap
+    </h2>
+    <div class="grid md:grid-cols-3 gap-10">
+     <div class="bg-indigo-800 rounded-xl p-6 shadow-lg hover:shadow-pink-600 transform hover:scale-105 transition duration-300 ease-in-out fadeInUp">
+      <div class="flex justify-center mb-4">
+       <div class="flex-shrink-0 w-12 h-12 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-lg">
+        Q1
+       </div>
+      </div>
+      <h3 class="text-xl font-semibold text-pink-400 mb-2 text-center">
+       Q1 2024 - Foundation &amp; Research
+      </h3>
+      <p class="text-indigo-300 text-center">
+      Conducted extensive research on AI integration with blockchain, finalized platform architecture, and began token design and smart contract development.
+      </p>
+     </div>
+     <div class="bg-indigo-800 rounded-xl p-6 shadow-lg hover:shadow-pink-600 transform hover:scale-105 transition duration-300 ease-in-out fadeInUp" style="animation-delay: 0.2s;">
+      <div class="flex justify-center mb-4">
+       <div class="flex-shrink-0 w-12 h-12 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-lg">
+        Q2
+       </div>
+      </div>
+      <h3 class="text-xl font-semibold text-pink-400 mb-2 text-center">
+       Q2 2024 - Prototype &amp; Alpha Launch
+      </h3>
+      <p class="text-indigo-300 text-center">
+       Released alpha version of the platform with core blockchain and AI modules, initiated community engagement, and started token pre-sale.
+      </p>
+     </div>
+     <div class="bg-indigo-800 rounded-xl p-6 shadow-lg hover:shadow-pink-600 transform hover:scale-105 transition duration-300 ease-in-out fadeInUp" style="animation-delay: 0.4s;">
+      <div class="flex justify-center mb-4">
+       <div class="flex-shrink-0 w-12 h-12 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-lg">
+        Q3
+       </div>
+      </div>
+      <h3 class="text-xl font-semibold text-pink-400 mb-2 text-center">
+       Q3 2024 - Beta &amp; Ecosystem Expansion
+      </h3>
+      <p class="text-indigo-300 text-center">
+       Launched beta platform with DeFi and identity modules, expanded developer tools, and onboarded strategic partners and projects.
+      </p>
+     </div>
+      <div class="bg-indigo-800 rounded-xl p-6 shadow-lg hover:shadow-pink-600 transform hover:scale-105 transition duration-300 ease-in-out fadeInUp" style="animation-delay: 0.4s;">
+      <div class="flex justify-center mb-4">
+       <div class="flex-shrink-0 w-12 h-12 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-lg">
+        Q4
+       </div>
+      </div>
+      <h3 class="text-xl font-semibold text-pink-400 mb-2 text-center">
+        Q4 2024 - Mainnet &amp; Governance Launch
+      </h3>
+      <p class="text-indigo-300 text-center">
+      Official mainnet launch with full AI-powered blockchain ecosystem, token staking, and decentralized governance voting system.
+      </p>
+     </div>
+      <div class="bg-indigo-800 rounded-xl p-6 shadow-lg hover:shadow-pink-600 transform hover:scale-105 transition duration-300 ease-in-out fadeInUp" style="animation-delay: 0.4s;">
+      <div class="flex justify-center mb-4">
+       <div class="flex-shrink-0 w-12 h-12 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold text-lg">
+        2025+
+       </div>
+      </div>
+      <h3 class="text-xl font-semibold text-pink-400 mb-2 text-center">
+       2025 and Beyond - Growth &amp; Innovation
+      </h3>
+      <p class="text-indigo-300 text-center">
+       Continuous platform upgrades, AI algorithm enhancements, ecosystem growth, and expansion into new verticals such as IoT and metaverse integration.
+      </p>
+     </div>
+
+    </div>
+   </section>
+   <!-- Project Files -->
+   <section class="max-w-6xl mx-auto space-y-8 slideInLeft" id="project-files">
+    <h2 class="text-4xl font-bold text-pink-400 mb-6 border-b-4 border-pink-600 inline-block pb-2">
+     Project Files
+    </h2>
+    <div class="grid md:grid-cols-3 gap-8">
+     <a class="flex items-center space-x-4 bg-indigo-800 rounded-lg p-4 shadow-lg hover:bg-pink-600 transition duration-300 ease-in-out transform hover:scale-105" download="" href="#">
+      <i class="fas fa-file-pdf fa-3x text-pink-400">
+      </i>
+      <div>
+       <h3 class="text-lg font-semibold text-white">
+        Whitepaper v1.0
+       </h3>
+       <p class="text-indigo-300">
+        Comprehensive overview of IntelliQuChain’s technology and roadmap.
+       </p>
+      </div>
+     </a>
+     <a class="flex items-center space-x-4 bg-indigo-800 rounded-lg p-4 shadow-lg hover:bg-pink-600 transition duration-300 ease-in-out transform hover:scale-105" download="" href="#">
+      <i class="fas fa-file-code fa-3x text-pink-400">
+      </i>
+      <div>
+       <h3 class="text-lg font-semibold text-white">
+        Smart Contract Code
+       </h3>
+       <p class="text-indigo-300">
+        Latest audited smart contract source code for IntelliQuChain token.
+       </p>
+      </div>
+     </a>
+     <a class="flex items-center space-x-4 bg-indigo-800 rounded-lg p-4 shadow-lg hover:bg-pink-600 transition duration-300 ease-in-out transform hover:scale-105" download="" href="#">
+      <i class="fas fa-file-archive fa-3x text-pink-400">
+      </i>
+      <div>
+       <h3 class="text-lg font-semibold text-white">
+        Ecosystem SDK
+       </h3>
+       <p class="text-indigo-300">
+        Software development kit for building on IntelliQuChain platform.
+       </p>
+      </div>
+     </a>
+    </div>
+   </section>
+   <!-- Strategic Plans -->
+   <section class="max-w-6xl mx-auto space-y-8 slideInRight" id="strategic-plans">
+    <h2 class="text-4xl font-bold text-pink-400 mb-6 border-b-4 border-pink-600 inline-block pb-2">
+     Strategic Plans
+    </h2>
+    <div class="space-y-6 text-indigo-300 text-lg leading-relaxed">
+     <p>
+      IntelliQuChain’s strategic roadmap is designed to ensure sustainable growth, technological leadership, and community engagement. Our phased approach includes:
+     </p>
+     <ul class="list-disc list-inside space-y-3">
+      <li>
+       <strong>
+        Phase 1:
+       </strong>
+       Platform development, token launch, and initial community building.
+      </li>
+      <li>
+       <strong>
+        Phase 2:
+       </strong>
+       Integration of AI smart contracts and cross-chain interoperability.
+      </li>
+      <li>
+       <strong>
+        Phase 3:
+       </strong>
+       Expansion of premium features and strategic partnerships.
+      </li>
+      <li>
+       <strong>
+        Phase 4:
+       </strong>
+       Global marketing campaigns and ecosystem scaling.
+      </li>
+     </ul>
+     <p>
+      We continuously evaluate market trends and user feedback to adapt and innovate, ensuring IntelliQuChain remains at the forefront of blockchain and AI technology.
+     </p>
+    </div>
+    <div class="relative w-full max-w-4xl mx-auto mt-8">
+     <img alt="Timeline graphic showing strategic roadmap phases with icons and milestones in purple and pink" class="rounded-xl shadow-2xl" loading="lazy" src="https://placehold.co/800x400/7c3aed/ffffff?text=Strategic+Roadmap+Timeline+Graphic"/>
+    </div>
+   </section>
+   <!-- Collaboration -->
+   <section class="max-w-6xl mx-auto space-y-8 slideInLeft" id="collaboration">
+    <h2 class="text-4xl font-bold text-pink-400 mb-6 border-b-4 border-pink-600 inline-block pb-2">
+     Collaboration
+    </h2>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+     <div>
+      <p class="text-indigo-300 text-lg leading-relaxed mb-6">
+       Collaboration is at the heart of IntelliQuChain’s success. We invite developers, researchers, and businesses to join our ecosystem and contribute to building a decentralized AI-powered future.
+      </p>
+      <ul class="list-disc list-inside space-y-3 text-indigo-300">
+       <li>
+        Open developer forums and hackathons
+       </li>
+       <li>
+        Partnership programs with AI startups
+       </li>
+       <li>
+        Joint research initiatives with universities
+       </li>
+       <li>
+        Community-driven governance and proposals
+       </li>
+      </ul>
+      <a class="inline-block mt-6 px-8 py-3 bg-pink-600 hover:bg-pink-700 rounded-full font-semibold text-white shadow-lg transform hover:scale-105 transition duration-300 ease-in-out" href="#">
+       Get Involved
+      </a>
+     </div>
+     <div class="relative w-full max-w-md mx-auto">
+      <img alt="Illustration of diverse team collaborating with blockchain and AI elements in purple and pink" class="rounded-lg shadow-lg" loading="lazy" src="https://placehold.co/400x300/9333ea/ffffff?text=Collaboration+Teamwork+Graphic"/>
+      <div aria-hidden="true" class="absolute top-4 left-4 bg-pink-600 rounded-full w-14 h-14 flex items-center justify-center shadow-lg pulseGlow">
+       <i class="fas fa-hands-helping fa-lg text-white">
+       </i>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- My Efforts -->
+   <section class="max-w-6xl mx-auto space-y-8 slideInRight" id="my-efforts">
+    <h2 class="text-4xl font-bold text-pink-400 mb-6 border-b-4 border-pink-600 inline-block pb-2">
+     My Efforts
+    </h2>
+    <div class="space-y-6 text-indigo-300 text-lg leading-relaxed">
+     <p>
+      As a dedicated contributor to IntelliQuChain, I have focused on the following key areas to drive the project forward:
+     </p>
+     <ul class="list-disc list-inside space-y-3">
+      <li>
+       Developed core AI integration modules for smart contracts
+      </li>
+      <li>
+       Designed and implemented tokenomics and staking mechanisms
+      </li>
+      <li>
+       Led community engagement and educational content creation
+      </li>
+      <li>
+       Coordinated strategic partnerships and marketing initiatives
+      </li>
+     </ul>
+     <p>
+      I am committed to continuous learning and collaboration to ensure IntelliQuChain’s vision becomes a reality.
+     </p>
+    </div>
+    <div class="flex flex-col md:flex-row md:space-x-8 items-center">
+     <img alt="Portrait of a dedicated IntelliQuChain contributor with blockchain and AI themed background in purple" class="rounded-full shadow-lg mb-6 md:mb-0" loading="lazy" src="https://placehold.co/200x200/7c3aed/ffffff?text=Contributor+Portrait"/>
+     <div class="max-w-xl text-indigo-300 text-lg leading-relaxed">
+      <p>
+       Feel free to connect with me on social media or contribute to the project through GitHub and community forums. Together, we can build a smarter, decentralized future.
+      </p>
+      <div class="mt-4 flex space-x-6 text-pink-400 text-2xl">
+       <a aria-label="GitHub" href="https://github.com/" rel="noopener" target="_blank">
+        <i class="fab fa-github hover:text-pink-600 transition">
+        </i>
+       </a>
+       <a aria-label="Twitter" href="https://twitter.com/" rel="noopener" target="_blank">
+        <i class="fab fa-twitter hover:text-pink-600 transition">
+        </i>
+       </a>
+       <a aria-label="LinkedIn" href="https://linkedin.com/" rel="noopener" target="_blank">
+        <i class="fab fa-linkedin-in hover:text-pink-600 transition">
+        </i>
+       </a>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-indigo-800 text-indigo-300 py-8 mt-16">
+   <div class="container mx-auto px-6 text-center space-y-4">
+    <p>
+     © 2024 IntelliQuChain. All rights reserved.
+    </p>
+    <p>
+     Built with
+     <i class="fas fa-heart text-pink-500">
+     </i>
+     using Tailwind CSS and Font Awesome.
+    </p>
+   </div>
+  </footer>
+  <script>
+   // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('change', () => {
+      if (menuToggle.checked) {
+        menu.classList.remove('hidden');
+        menu.classList.add('flex', 'flex-col', 'space-y-4', 'mt-4');
+      } else {
+        menu.classList.add('hidden');
+        menu.classList.remove('flex', 'flex-col', 'space-y-4', 'mt-4');
+      }
+    });
+  </script>
+ </body>
+</html>

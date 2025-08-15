@@ -1,0 +1,558 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   IntelliQuChain - AI-Powered Blockchain Ecosystem Platform
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+    /* Animations */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fadeInUp {
+      animation: fadeInUp 1s ease forwards;
+    }
+    @keyframes pulseGlow {
+      0%, 100% {
+        box-shadow: 0 0 8px 2px rgba(59, 130, 246, 0.6);
+      }
+      50% {
+        box-shadow: 0 0 20px 6px rgba(59, 130, 246, 1);
+      }
+    }
+    .pulseGlow {
+      animation: pulseGlow 2.5s infinite;
+    }
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-gray-100 leading-relaxed">
+  <!-- Navbar -->
+  <nav class="bg-gray-800 fixed w-full z-50 shadow-lg">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a class="text-3xl font-extrabold text-indigo-400 tracking-wide select-none animate-pulseGlow" href="#">
+     IntelliQuChain
+    </a>
+    <ul class="hidden md:flex space-x-8 text-gray-300 font-semibold">
+     <li>
+      <a class="hover:text-indigo-400 transition" href="#overview">
+       Overview
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-400 transition" href="#nft-marketplace">
+       NFT Marketplace
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-400 transition" href="#defi-platform">
+       DeFi Platform
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-400 transition" href="#trading-marketplace">
+       Trading Marketplace
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-400 transition" href="#personal-ai-agent">
+       Personal AI Agent
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-400 transition" href="#leo-geo-satellites">
+       LEO &amp; GEO Satellites
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-400 transition" href="#token-system">
+       Token System
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-indigo-400 transition" href="#collaborations">
+       Collaborations
+      </a>
+     </li>
+    </ul>
+    <button class="md:hidden text-indigo-400 focus:outline-none" id="mobile-menu-button">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </div>
+   <div class="hidden md:hidden bg-gray-800 px-6 pb-4" id="mobile-menu">
+    <ul class="space-y-4 text-gray-300 font-semibold">
+     <li>
+      <a class="block hover:text-indigo-400 transition" href="#overview">
+       Overview
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-400 transition" href="#nft-marketplace">
+       NFT Marketplace
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-400 transition" href="#defi-platform">
+       DeFi Platform
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-400 transition" href="#trading-marketplace">
+       Trading Marketplace
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-400 transition" href="#personal-ai-agent">
+       Personal AI Agent
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-400 transition" href="#leo-geo-satellites">
+       LEO &amp; GEO Satellites
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-400 transition" href="#token-system">
+       Token System
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-indigo-400 transition" href="#collaborations">
+       Collaborations
+      </a>
+     </li>
+    </ul>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <header class="pt-24 pb-20 bg-gradient-to-r from-indigo-900 via-indigo-800 to-indigo-900 text-center px-6" id="overview">
+   <h1 class="text-5xl md:text-6xl font-extrabold text-indigo-300 mb-6 fadeInUp">
+    IntelliQuChain
+   </h1>
+   <p class="max-w-4xl mx-auto text-lg md:text-xl text-indigo-200 mb-10 fadeInUp" style="animation-delay: 0.3s;">
+    The Future of Token-Based AI-Powered Blockchain Ecosystem Platform
+    <br/>
+    Integrating NFTs Marketplace, DeFi, Trading, Personal AI Agents, and Satellite Systems
+   </p>
+   <a class="inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition transform hover:scale-105 fadeInUp" href="#collaborations" style="animation-delay: 0.6s;">
+    Explore Collaborations
+   </a>
+   <div class="mt-12 flex justify-center space-x-6 fadeInUp" style="animation-delay: 0.9s;">
+    <img alt="Abstract digital network representing AI-powered blockchain nodes connected in a futuristic style" class="rounded-xl shadow-lg" src="https://placehold.co/120x120/png?text=AI+Blockchain+Network"/>
+    <img alt="LEO and GEO satellites orbiting Earth with digital data streams connecting them" class="rounded-xl shadow-lg" src="https://placehold.co/120x120/png?text=Satellite+System"/>
+    <img alt="3D tokens floating above a digital blockchain grid symbolizing token economy" class="rounded-xl shadow-lg" src="https://placehold.co/120x120/png?text=Token+Economy"/>
+   </div>
+  </header>
+  <!-- Section: NFTs Marketplace -->
+  <section class="max-w-7xl mx-auto px-6 py-20 md:py-32" id="nft-marketplace">
+   <div class="md:flex md:items-center md:space-x-12">
+    <div class="md:w-1/2 reveal">
+     <h2 class="text-4xl font-extrabold text-indigo-400 mb-6">
+      NFTs Marketplace
+     </h2>
+     <p class="text-gray-300 mb-6 leading-relaxed text-lg">
+      IntelliQuChain’s NFT Marketplace revolutionizes digital asset ownership by integrating AI-powered verification and blockchain security. Artists, collectors, and traders can mint, buy, and sell unique digital collectibles with ease and trust.
+     </p>
+     <p class="text-gray-400 mb-6 leading-relaxed text-lg">
+      Our platform supports dynamic NFTs that evolve based on AI-driven data inputs, creating interactive and personalized digital art experiences. The marketplace is optimized for scalability and low transaction fees, ensuring accessibility for all users.
+     </p>
+     <ul class="list-disc list-inside text-indigo-300 space-y-2 text-lg">
+      <li>
+       AI-Verified Authenticity &amp; Provenance
+      </li>
+      <li>
+       Dynamic &amp; Interactive NFT Experiences
+      </li>
+      <li>
+       Cross-Chain NFT Support &amp; Interoperability
+      </li>
+      <li>
+       Low Gas Fees &amp; Fast Transactions
+      </li>
+      <li>
+       Community-Driven Curation &amp; Rewards
+      </li>
+     </ul>
+    </div>
+    <div class="md:w-1/2 mt-12 md:mt-0 reveal">
+     <img alt="User interface of IntelliQuChain NFT marketplace showing digital art listings, prices, and AI verification badges" class="rounded-3xl shadow-2xl mx-auto" src="https://placehold.co/600x400/png?text=NFT+Marketplace+Dashboard"/>
+    </div>
+   </div>
+  </section>
+  <!-- Section: DeFi Platform -->
+  <section class="bg-gray-800 py-20 md:py-32 px-6" id="defi-platform">
+   <div class="max-w-7xl mx-auto md:flex md:items-center md:space-x-12">
+    <div class="md:w-1/2 order-2 md:order-1 reveal">
+     <img alt="Dashboard of IntelliQuChain DeFi platform showing lending, borrowing, and yield farming options with AI analytics" class="rounded-3xl shadow-2xl mx-auto" src="https://placehold.co/600x400/png?text=DeFi+Platform+Interface"/>
+    </div>
+    <div class="md:w-1/2 order-1 md:order-2 reveal">
+     <h2 class="text-4xl font-extrabold text-indigo-400 mb-6">
+      DeFi Platform
+     </h2>
+     <p class="text-gray-300 mb-6 leading-relaxed text-lg">
+      Unlock the power of decentralized finance with IntelliQuChain’s AI-enhanced DeFi platform. Our system offers seamless lending, borrowing, staking, and yield farming with intelligent risk assessment and portfolio optimization.
+     </p>
+     <p class="text-gray-400 mb-6 leading-relaxed text-lg">
+      Powered by smart contracts and AI algorithms, users can maximize returns while minimizing risks. Our platform supports multi-asset pools, cross-chain liquidity, and real-time analytics for informed decision-making.
+     </p>
+     <ul class="list-disc list-inside text-indigo-300 space-y-2 text-lg">
+      <li>
+       AI-Driven Risk &amp; Reward Optimization
+      </li>
+      <li>
+       Multi-Asset Lending &amp; Borrowing Pools
+      </li>
+      <li>
+       Cross-Chain Liquidity Aggregation
+      </li>
+      <li>
+       Real-Time Portfolio Analytics
+      </li>
+      <li>
+       Secure &amp; Transparent Smart Contracts
+      </li>
+     </ul>
+    </div>
+   </div>
+  </section>
+  <!-- Section: Trading Marketplace -->
+  <section class="max-w-7xl mx-auto px-6 py-20 md:py-32" id="trading-marketplace">
+   <div class="md:flex md:items-center md:space-x-12">
+    <div class="md:w-1/2 reveal">
+     <h2 class="text-4xl font-extrabold text-indigo-400 mb-6">
+      Trading Marketplace
+     </h2>
+     <p class="text-gray-300 mb-6 leading-relaxed text-lg">
+      IntelliQuChain’s Trading Marketplace empowers users with AI-powered trading bots, predictive analytics, and decentralized order books. Trade cryptocurrencies, tokens, and digital assets with enhanced precision and speed.
+     </p>
+     <p class="text-gray-400 mb-6 leading-relaxed text-lg">
+      Our platform supports algorithmic trading strategies, social trading, and real-time market sentiment analysis. Benefit from low latency execution and secure custody solutions.
+     </p>
+     <ul class="list-disc list-inside text-indigo-300 space-y-2 text-lg">
+      <li>
+       AI-Powered Trading Bots &amp; Signals
+      </li>
+      <li>
+       Decentralized Order Books &amp; Liquidity
+      </li>
+      <li>
+       Social &amp; Copy Trading Features
+      </li>
+      <li>
+       Real-Time Market Sentiment Analysis
+      </li>
+      <li>
+       Secure Wallet Integration &amp; Custody
+      </li>
+     </ul>
+    </div>
+    <div class="md:w-1/2 mt-12 md:mt-0 reveal">
+     <img alt="IntelliQuChain trading marketplace interface showing charts, order books, and AI trading bot controls" class="rounded-3xl shadow-2xl mx-auto" src="https://placehold.co/600x400/png?text=Trading+Marketplace+Interface"/>
+    </div>
+   </div>
+  </section>
+  <!-- Section: Personal AI Agent -->
+  <section class="bg-gray-800 py-20 md:py-32 px-6" id="personal-ai-agent">
+   <div class="max-w-7xl mx-auto md:flex md:items-center md:space-x-12">
+    <div class="md:w-1/2 order-2 md:order-1 reveal">
+     <img alt="User interacting with a personal AI agent dashboard showing personalized blockchain insights and recommendations" class="rounded-3xl shadow-2xl mx-auto" src="https://placehold.co/600x400/png?text=Personal+AI+Agent+Dashboard"/>
+    </div>
+    <div class="md:w-1/2 order-1 md:order-2 reveal">
+     <h2 class="text-4xl font-extrabold text-indigo-400 mb-6">
+      Personal AI Agent
+     </h2>
+     <p class="text-gray-300 mb-6 leading-relaxed text-lg">
+      Your personal AI Agent on IntelliQuChain acts as a smart assistant, helping you navigate the blockchain ecosystem with personalized insights, automated portfolio management, and real-time alerts.
+     </p>
+     <p class="text-gray-400 mb-6 leading-relaxed text-lg">
+      Leveraging advanced machine learning and natural language processing, the AI Agent understands your goals and preferences, providing tailored recommendations and executing tasks on your behalf securely.
+     </p>
+     <ul class="list-disc list-inside text-indigo-300 space-y-2 text-lg">
+      <li>
+       Personalized Portfolio &amp; Risk Management
+      </li>
+      <li>
+       Automated Smart Contract Interactions
+      </li>
+      <li>
+       Real-Time Market &amp; News Alerts
+      </li>
+      <li>
+       Natural Language Query &amp; Commands
+      </li>
+      <li>
+       Privacy-Focused &amp; Secure AI Processing
+      </li>
+     </ul>
+    </div>
+   </div>
+  </section>
+  <!-- Section: LEO & GEO Satellite System -->
+  <section class="max-w-7xl mx-auto px-6 py-20 md:py-32" id="leo-geo-satellites">
+   <div class="md:flex md:items-center md:space-x-12">
+    <div class="md:w-1/2 reveal">
+     <h2 class="text-4xl font-extrabold text-indigo-400 mb-6">
+      LEO &amp; GEO Satellite System
+     </h2>
+     <p class="text-gray-300 mb-6 leading-relaxed text-lg">
+      IntelliQuChain integrates Low Earth Orbit (LEO) and Geostationary Earth Orbit (GEO) satellites to provide decentralized, secure, and global blockchain network coverage.
+     </p>
+     <p class="text-gray-400 mb-6 leading-relaxed text-lg">
+      This satellite system ensures uninterrupted connectivity, data transmission, and blockchain synchronization even in remote or underserved regions, enabling true global decentralization.
+     </p>
+     <ul class="list-disc list-inside text-indigo-300 space-y-2 text-lg">
+      <li>
+       Global Blockchain Network Coverage
+      </li>
+      <li>
+       Decentralized Data Transmission &amp; Sync
+      </li>
+      <li>
+       AI-Optimized Satellite Routing
+      </li>
+      <li>
+       Resilient &amp; Redundant Network Architecture
+      </li>
+      <li>
+       Supports IoT &amp; Edge Devices Integration
+      </li>
+     </ul>
+    </div>
+    <div class="md:w-1/2 mt-12 md:mt-0 reveal">
+     <img alt="Illustration of LEO and GEO satellites orbiting Earth with digital blockchain data streams connecting them" class="rounded-3xl shadow-2xl mx-auto" src="https://placehold.co/600x400/png?text=LEO+and+GEO+Satellites+Network"/>
+    </div>
+   </div>
+  </section>
+  <!-- Section: Token-Based System -->
+  <section class="bg-gray-800 py-20 md:py-32 px-6" id="token-system">
+   <div class="max-w-7xl mx-auto md:flex md:items-center md:space-x-12">
+    <div class="md:w-1/2 order-2 md:order-1 reveal">
+     <img alt="3D visualization of token economy with AI-powered blockchain nodes and token transactions" class="rounded-3xl shadow-2xl mx-auto" src="https://placehold.co/600x400/png?text=Token+Economy+System"/>
+    </div>
+    <div class="md:w-1/2 order-1 md:order-2 reveal">
+     <h2 class="text-4xl font-extrabold text-indigo-400 mb-6">
+      Token-Based System
+     </h2>
+     <p class="text-gray-300 mb-6 leading-relaxed text-lg">
+      IntelliQuChain’s token-based system is the backbone of our ecosystem, enabling seamless value exchange, governance, and incentivization across all platform components.
+     </p>
+     <p class="text-gray-400 mb-6 leading-relaxed text-lg">
+      Our native token powers transactions, staking, voting, and rewards, while AI algorithms dynamically adjust tokenomics to maintain stability, growth, and user engagement.
+     </p>
+     <ul class="list-disc list-inside text-indigo-300 space-y-2 text-lg">
+      <li>
+       Native Utility &amp; Governance Token
+      </li>
+      <li>
+       AI-Driven Dynamic Tokenomics
+      </li>
+      <li>
+       Staking &amp; Rewards Programs
+      </li>
+      <li>
+       Cross-Platform Token Integration
+      </li>
+      <li>
+       Secure &amp; Transparent Token Transactions
+      </li>
+     </ul>
+    </div>
+   </div>
+  </section>
+  <!-- Section: Collaborations (Comprehensive Explanation) -->
+  <section class="max-w-7xl mx-auto px-6 py-20 md:py-32" id="collaborations">
+   <h2 class="text-5xl font-extrabold text-indigo-400 mb-12 text-center">
+    Collaborations
+   </h2>
+   <article class="prose prose-indigo max-w-none text-gray-300 space-y-8">
+    <p>
+     IntelliQuChain stands at the forefront of blockchain innovation by fostering a vast network of collaborations that span industries, technologies, and geographies. Our ecosystem thrives on partnerships with leading AI research institutions, blockchain developers, satellite communication providers, financial institutions, and decentralized communities. These collaborations enable us to build a comprehensive, token-based AI-powered blockchain platform that delivers unparalleled value, security, and scalability.
+    </p>
+    <p>
+     Our collaboration strategy is multi-faceted, focusing on co-development, research, integration, and community engagement. By working closely with AI labs, we integrate cutting-edge machine learning models that enhance blockchain security, transaction efficiency, and user personalization. Partnerships with satellite companies allow us to deploy and maintain our LEO and GEO satellite networks, ensuring global blockchain accessibility and resilience.
+    </p>
+    <p>
+     In the DeFi and NFT sectors, IntelliQuChain collaborates with top decentralized finance protocols and NFT creators to build interoperable marketplaces and financial products. These partnerships facilitate liquidity sharing, cross-chain asset transfers, and innovative NFT utilities that redefine digital ownership and finance.
+    </p>
+    <p>
+     Our token-based governance model is shaped through collaboration with community leaders and token holders, ensuring transparent decision-making and equitable participation. We also engage with regulatory bodies and legal experts to navigate compliance and foster trust in the ecosystem.
+    </p>
+    <p>
+     The Personal AI Agent component is developed in collaboration with AI startups and UX designers to create intuitive, secure, and privacy-focused AI assistants that empower users to manage their blockchain assets effortlessly.
+    </p>
+    <p>
+     IntelliQuChain’s collaborations extend to educational institutions and developer communities, promoting blockchain literacy, open-source contributions, and innovation challenges that drive continuous platform evolution.
+    </p>
+    <p>
+     Through these extensive collaborations, IntelliQuChain is not just a platform but a thriving ecosystem that leverages collective expertise and resources to pioneer the future of AI-powered blockchain technology.
+    </p>
+    <h3>
+     Key Collaboration Areas
+    </h3>
+    <ul>
+     <li>
+      <strong>
+       AI Research &amp; Development:
+      </strong>
+      Partnering with universities and AI labs to integrate advanced machine learning models for blockchain optimization.
+     </li>
+     <li>
+      <strong>
+       Satellite Communications:
+      </strong>
+      Collaborating with aerospace companies to deploy and maintain LEO and GEO satellite networks for decentralized connectivity.
+     </li>
+     <li>
+      <strong>
+       DeFi &amp; NFT Protocols:
+      </strong>
+      Working with decentralized finance projects and NFT creators to build interoperable and innovative marketplaces.
+     </li>
+     <li>
+      <strong>
+       Tokenomics &amp; Governance:
+      </strong>
+      Engaging with community stakeholders and experts to design dynamic token models and transparent governance frameworks.
+     </li>
+     <li>
+      <strong>
+       Regulatory &amp; Legal Compliance:
+      </strong>
+      Consulting with legal professionals to ensure platform compliance and foster user trust.
+     </li>
+     <li>
+      <strong>
+       Education &amp; Community Building:
+      </strong>
+      Partnering with educational institutions and developer communities to promote blockchain knowledge and innovation.
+     </li>
+    </ul>
+    <h3>
+     Collaborative Projects &amp; Initiatives
+    </h3>
+    <p>
+     IntelliQuChain has launched several joint initiatives with our partners, including:
+    </p>
+    <ul>
+     <li>
+      <strong>
+       AI-Powered Fraud Detection:
+      </strong>
+      A project with AI labs to develop real-time fraud detection algorithms that protect users and assets.
+     </li>
+     <li>
+      <strong>
+       Global Satellite Blockchain Network:
+      </strong>
+      Deployment of a decentralized blockchain network via LEO and GEO satellites to ensure global coverage and resilience.
+     </li>
+     <li>
+      <strong>
+       Cross-Chain NFT Interoperability:
+      </strong>
+      Collaboration with multiple blockchain projects to enable NFT transfers and utilities across different chains.
+     </li>
+     <li>
+      <strong>
+       Decentralized Autonomous Organization (DAO):
+      </strong>
+      Establishing a DAO with community leaders to govern platform upgrades and tokenomics decisions.
+     </li>
+     <li>
+      <strong>
+       AI Agent Personalization:
+      </strong>
+      Co-development of AI agents that learn user preferences and automate blockchain interactions securely.
+     </li>
+    </ul>
+    <h3>
+     Community &amp; Ecosystem Growth
+    </h3>
+    <p>
+     Our collaborations extend beyond technology to community empowerment. IntelliQuChain hosts hackathons, webinars, and workshops in partnership with educational and developer organizations to nurture talent and foster innovation. We provide grants and incubation programs for startups building on our platform, ensuring a vibrant and sustainable ecosystem.
+    </p>
+    <p>
+     By uniting diverse expertise and resources, IntelliQuChain’s collaborations create a robust foundation for a decentralized, AI-powered blockchain future that is accessible, secure, and innovative.
+    </p>
+   </article>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12 px-6">
+   <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+    <div class="text-center md:text-left">
+     <h3 class="text-indigo-400 font-extrabold text-2xl mb-2 select-none">
+      IntelliQuChain
+     </h3>
+     <p class="text-sm max-w-xs">
+      © 2024 IntelliQuChain. All rights reserved. Building the future of AI-powered blockchain ecosystems.
+     </p>
+    </div>
+    <div class="flex space-x-6 text-xl">
+     <a aria-label="Twitter" class="hover:text-indigo-400 transition" href="https://twitter.com" rel="noopener" target="_blank">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a aria-label="LinkedIn" class="hover:text-indigo-400 transition" href="https://linkedin.com" rel="noopener" target="_blank">
+      <i class="fab fa-linkedin-in">
+      </i>
+     </a>
+     <a aria-label="GitHub" class="hover:text-indigo-400 transition" href="https://github.com" rel="noopener" target="_blank">
+      <i class="fab fa-github">
+      </i>
+     </a>
+     <a aria-label="Discord" class="hover:text-indigo-400 transition" href="https://discord.com" rel="noopener" target="_blank">
+      <i class="fab fa-discord">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   // Mobile menu toggle
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Scroll reveal animation
+    function revealOnScroll() {
+      const reveals = document.querySelectorAll('.reveal');
+      const windowHeight = window.innerHeight;
+      reveals.forEach((el) => {
+        const elementTop = el.getBoundingClientRect().top;
+        if (elementTop < windowHeight - 100) {
+          el.classList.add('active');
+        }
+      });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+ </body>
+</html>
