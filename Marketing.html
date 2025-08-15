@@ -43,87 +43,80 @@
   </style>
  </head>
  <body class="bg-gradient-to-b from-indigo-900 via-indigo-800 to-indigo-700 text-gray-100 min-h-screen flex flex-col">
-  <header class="bg-indigo-900 shadow-lg sticky top-0 z-50">
-   <nav class="container mx-auto flex items-center justify-between p-5">
-    <div class="flex items-center space-x-3">
-     <img alt="IntelliQuChain logo, stylized letters IQC in futuristic blue and purple gradient" class="w-12 h-12 rounded-full pulseScale" src="https://placehold.co/48x48/png?text=IQC"/>
-     <h1 class="text-2xl font-extrabold tracking-wide text-white select-none">
+  <header class="w-full bg-gradient-to-r from-indigo-800 via-purple-700 to-pink-700 shadow-lg sticky top-0 z-50">
+   <nav class="container mx-auto px-6 py-4 flex flex-wrap items-center justify-between">
+    <a class="text-3xl font-extrabold tracking-wide text-white flex items-center space-x-2 animate-pulse" href="#">
+     <img alt="IntelliQuChain logo, stylized letters IQC in purple gradient on white background" class="rounded-full" src="https://placehold.co/40x40/7c3aed/ffffff?text=IQC"/>
+     <span>
       IntelliQuChain
-     </h1>
-    </div>
-    <ul class="hidden md:flex space-x-8 font-semibold text-indigo-200">
-     <li>
-      <a class="hover:text-white transition" href="#introduction">
-       Introduction
-      </a>
-     </li>
-     <li>
-      <a class="hover:text-white transition" href="#objective">
-       Objective
-      </a>
-     </li>
-     <li>
-      <a class="hover:text-white transition" href="#first-step">
-       First Step
-      </a>
-     </li>
-     <li>
-      <a class="hover:text-white transition" href="#second-step">
-       Second Step
-      </a>
-     </li>
-     <li>
-      <a class="hover:text-white transition" href="#market-cap">
-       Market Cap
-      </a>
-     </li>
-     <li>
-      <a class="hover:text-white transition" href="#market-overview">
-       Market Overview
-      </a>
-     </li>
-    </ul>
-    <button aria-label="Toggle menu" class="md:hidden text-indigo-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-indigo-400" id="menu-btn">
+     </span>
+    </a>
+    <input class="hidden" id="menu-toggle" type="checkbox"/>
+    <label class="cursor-pointer md:hidden block text-white" for="menu-toggle">
      <i class="fas fa-bars fa-lg">
      </i>
-    </button>
-   </nav>
-   <div class="hidden md:hidden bg-indigo-800" id="mobile-menu">
-    <ul class="flex flex-col p-4 space-y-3 font-semibold text-indigo-200">
-     <li>
-      <a class="block hover:text-white transition" href="#introduction">
-       Introduction
+    </label>
+    <ul class="hidden md:flex md:items-center md:space-x-8 w-full md:w-auto mt-4 md:mt-0 text-lg font-semibold" id="menu">
+     <li class="group relative">
+      <a class="hover:text-pink-400 transition duration-300 ease-in-out" href="/index.html">
+       Project Overview
       </a>
+      <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-400 transition-all duration-300">
+      </span>
      </li>
-     <li>
-      <a class="block hover:text-white transition" href="#objective">
-       Objective
+     <li class="group relative">
+      <a class="hover:text-pink-400 transition duration-300 ease-in-out" href="/Innovations.html">
+       Innovations
       </a>
+      <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-400 transition-all duration-300">
+      </span>
      </li>
-     <li>
-      <a class="block hover:text-white transition" href="#first-step">
-       First Step
+     <li class="group relative">
+      <a class="hover:text-pink-400 transition duration-300 ease-in-out" href="/Marketing.html">
+       Marketing
       </a>
+      <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-400 transition-all duration-300">
+      </span>
      </li>
-     <li>
-      <a class="block hover:text-white transition" href="#second-step">
-       Second Step
+     <li class="group relative">
+      <a class="hover:text-pink-400 transition duration-300 ease-in-out" href="/Premiun_Function.html">
+       Premium Features
       </a>
+      <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-400 transition-all duration-300">
+      </span>
      </li>
-     <li>
-      <a class="block hover:text-white transition" href="#market-cap">
-       Market Cap
+     <li class="group relative">
+      <a class="hover:text-pink-400 transition duration-300 ease-in-out" href="/project-files.html">
+       Project Files
       </a>
+      <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-400 transition-all duration-300">
+      </span>
      </li>
-     <li>
-      <a class="block hover:text-white transition" href="#market-overview">
-       Market Overview
+     <li class="group relative">
+      <a class="hover:text-pink-400 transition duration-300 ease-in-out" href="/Strategic_projects.html">
+       Strategic Plans
       </a>
+      <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-400 transition-all duration-300">
+      </span>
+     </li>
+     <li class="group relative">
+      <a class="hover:text-pink-400 transition duration-300 ease-in-out" href="/Collaborations.html">
+       Collaboration
+      </a>
+      <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-400 transition-all duration-300">
+      </span>
+     </li>
+     <li class="group relative">
+      <a class="hover:text-pink-400 transition duration-300 ease-in-out" href="/my-efforts.html">
+       My Efforts
+      </a>
+      <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-400 transition-all duration-300">
+      </span>
      </li>
     </ul>
-   </div>
+   </nav>
   </header>
-  <main class="flex-grow container mx-auto px-5 py-12 space-y-20 max-w-7xl">
+  <main class="flex-grow container mx-auto px-6 py-12 space-y-24">
    <!-- Introduction -->
    <section class="fadeInUp max-w-5xl mx-auto" id="introduction">
     <div class="flex flex-col md:flex-row items-center md:space-x-12 space-y-8 md:space-y-0">
@@ -313,3 +306,4 @@
   </script>
  </body>
 </html>
+
