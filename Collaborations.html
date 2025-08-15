@@ -52,103 +52,80 @@
  </head>
  <body class="bg-gray-900 text-gray-100 leading-relaxed">
   <!-- Navbar -->
-  <nav class="bg-gray-800 fixed w-full z-50 shadow-lg">
-   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-    <a class="text-3xl font-extrabold text-indigo-400 tracking-wide select-none animate-pulseGlow" href="#">
-     IntelliQuChain
+  <header class="w-full bg-gradient-to-r from-indigo-800 via-purple-700 to-pink-700 shadow-lg sticky top-0 z-50">
+   <nav class="container mx-auto px-6 py-4 flex flex-wrap items-center justify-between">
+    <a class="text-3xl font-extrabold tracking-wide text-white flex items-center space-x-2 animate-pulse" href="#">
+     <img alt="IntelliQuChain logo, stylized letters IQC in purple gradient on white background" class="rounded-full" src="https://placehold.co/40x40/7c3aed/ffffff?text=IQC"/>
+     <span>
+      IntelliQuChain
+     </span>
     </a>
-    <ul class="hidden md:flex space-x-8 text-gray-300 font-semibold">
-     <li>
-      <a class="hover:text-indigo-400 transition" href="#overview">
-       Overview
-      </a>
-     </li>
-     <li>
-      <a class="hover:text-indigo-400 transition" href="#nft-marketplace">
-       NFT Marketplace
-      </a>
-     </li>
-     <li>
-      <a class="hover:text-indigo-400 transition" href="#defi-platform">
-       DeFi Platform
-      </a>
-     </li>
-     <li>
-      <a class="hover:text-indigo-400 transition" href="#trading-marketplace">
-       Trading Marketplace
-      </a>
-     </li>
-     <li>
-      <a class="hover:text-indigo-400 transition" href="#personal-ai-agent">
-       Personal AI Agent
-      </a>
-     </li>
-     <li>
-      <a class="hover:text-indigo-400 transition" href="#leo-geo-satellites">
-       LEO &amp; GEO Satellites
-      </a>
-     </li>
-     <li>
-      <a class="hover:text-indigo-400 transition" href="#token-system">
-       Token System
-      </a>
-     </li>
-     <li>
-      <a class="hover:text-indigo-400 transition" href="#collaborations">
-       Collaborations
-      </a>
-     </li>
-    </ul>
-    <button class="md:hidden text-indigo-400 focus:outline-none" id="mobile-menu-button">
+    <input class="hidden" id="menu-toggle" type="checkbox"/>
+    <label class="cursor-pointer md:hidden block text-white" for="menu-toggle">
      <i class="fas fa-bars fa-lg">
      </i>
-    </button>
-   </div>
-   <div class="hidden md:hidden bg-gray-800 px-6 pb-4" id="mobile-menu">
-    <ul class="space-y-4 text-gray-300 font-semibold">
-     <li>
-      <a class="block hover:text-indigo-400 transition" href="#overview">
-       Overview
+    </label>
+    <ul class="hidden md:flex md:items-center md:space-x-8 w-full md:w-auto mt-4 md:mt-0 text-lg font-semibold" id="menu">
+     <li class="group relative">
+      <a class="hover:text-pink-400 transition duration-300 ease-in-out" href="/index.html">
+       Project Overview
       </a>
+      <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-400 transition-all duration-300">
+      </span>
      </li>
-     <li>
-      <a class="block hover:text-indigo-400 transition" href="#nft-marketplace">
-       NFT Marketplace
+     <li class="group relative">
+      <a class="hover:text-pink-400 transition duration-300 ease-in-out" href="/Innovations.html">
+       Innovations
       </a>
+      <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-400 transition-all duration-300">
+      </span>
      </li>
-     <li>
-      <a class="block hover:text-indigo-400 transition" href="#defi-platform">
-       DeFi Platform
+     <li class="group relative">
+      <a class="hover:text-pink-400 transition duration-300 ease-in-out" href="/Marketing.html">
+       Marketing
       </a>
+      <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-400 transition-all duration-300">
+      </span>
      </li>
-     <li>
-      <a class="block hover:text-indigo-400 transition" href="#trading-marketplace">
-       Trading Marketplace
+     <li class="group relative">
+      <a class="hover:text-pink-400 transition duration-300 ease-in-out" href="/Premiun_Function.html">
+       Premium Features
       </a>
+      <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-400 transition-all duration-300">
+      </span>
      </li>
-     <li>
-      <a class="block hover:text-indigo-400 transition" href="#personal-ai-agent">
-       Personal AI Agent
+     <li class="group relative">
+      <a class="hover:text-pink-400 transition duration-300 ease-in-out" href="/project-files.html">
+       Project Files
       </a>
+      <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-400 transition-all duration-300">
+      </span>
      </li>
-     <li>
-      <a class="block hover:text-indigo-400 transition" href="#leo-geo-satellites">
-       LEO &amp; GEO Satellites
+     <li class="group relative">
+      <a class="hover:text-pink-400 transition duration-300 ease-in-out" href="/Strategic_projects.html">
+       Strategic Plans
       </a>
+      <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-400 transition-all duration-300">
+      </span>
      </li>
-     <li>
-      <a class="block hover:text-indigo-400 transition" href="#token-system">
-       Token System
+     <li class="group relative">
+      <a class="hover:text-pink-400 transition duration-300 ease-in-out" href="/Collaborations.html">
+       Collaboration
       </a>
+      <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-400 transition-all duration-300">
+      </span>
      </li>
-     <li>
-      <a class="block hover:text-indigo-400 transition" href="#collaborations">
-       Collaborations
+     <li class="group relative">
+      <a class="hover:text-pink-400 transition duration-300 ease-in-out" href="/my-efforts.html">
+       My Efforts
       </a>
+      <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full h-0.5 bg-pink-400 transition-all duration-300">
+      </span>
      </li>
     </ul>
-   </div>
-  </nav>
+   </nav>
+  </header>
+  <main class="flex-grow container mx-auto px-6 py-12 space-y-24">
   <!-- Hero Section -->
   <header class="pt-24 pb-20 bg-gradient-to-r from-indigo-900 via-indigo-800 to-indigo-900 text-center px-6" id="overview">
    <h1 class="text-5xl md:text-6xl font-extrabold text-indigo-300 mb-6 fadeInUp">
@@ -556,3 +533,4 @@
   </script>
  </body>
 </html>
+
